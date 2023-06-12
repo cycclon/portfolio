@@ -9,5 +9,13 @@
     "language": {
         "english": "English",
         "spanish": "Spanish"
+    },
+    "home": {
+        "full_title_label": "Título: ",
+        "full_title": "Ingeniero en Sistemas",
+        "country_label": "País: ",
+        "country": "Argentina",
+        "age_label": "Nac.: ",
+        "age": "Diciembre 15, 1983"
     }
 }

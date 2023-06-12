@@ -9,5 +9,13 @@
     "language": {
         "english": "Inglés",
         "spanish": "Español"
+    },
+    "home": {
+        "full_title_label": "Degree: ",
+        "full_title": "Systems Engineer",
+        "country_label": "Country: ",
+        "country": "Argentina",
+        "age_label": "Birth: ",
+        "age": "December 15th, 1983"
     }
 }
