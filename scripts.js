@@ -16,10 +16,16 @@ function myFunction() {
 function getLanguage() {
     (localStorage.getItem('language') == null) ? setLanguage('en') : false;
     let language;
-    $.ajax({ 
-    url:  '/lang/' +  localStorage.getItem('language') + '.json', 
-    dataType: 'json', async: false, dataType: 'json', 
-    success: function (lang) { language = lang } });
+
+    $.getJSON(`https://cycclon.github.io/lang/${localStorage.getItem('language')}.json`, function(json) {
+        console.log(json);
+        language = json;
+    });
+
+    // $.ajax({ 
+    // url:  '/lang/' +  localStorage.getItem('language') + '.json', 
+    // dataType: 'json', async: false, dataType: 'json', 
+    // success: function (lang) { language = lang } });
     return language;
 }
 
