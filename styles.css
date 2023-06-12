@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue");
+/* @import url("https://fonts.googleapis.com/css?family=Henny+Penny"); */
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {   
+    font-family: "Raleway"; 
+    --color-foreground: white;
+    --color-foreground-dimm: #aaa;
+    --color-header-translucent: rgba(85, 105, 47, 0.5);
+    --color-background: black;
+    --color-header: darkolivegreen;
+    margin: 0;
+    background: var(--color-background);
+    color: var(--color-foreground);
+}
+
+body.light {
+    --color-foreground: black;
+    --color-foreground-dimm: #444;
+    --color-background: #ddd;
+    --color-header: olive;
+    --color-header-translucent: rgba(94, 94, 22, 0.5);
+}
+
+/*#region HEADER */
+
+h1 {
+    font-family: "Bebas Neue";
+    text-align: center;
+    width: 100%;
+    color: var(--color-header);
+    text-transform: uppercase;
+    font-size: 30px;
+    border-bottom: 1px solid var(--color-header-translucent);
+    margin-bottom: 3px;
+}
+
+.header {
+    display: inline-block;
+    width: 100%;
+    background-color: var(--color-header); 
+    text-align: center;  
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+/*#endregion */
+
+
+/*#region MENU*/
+
+ul.menu {
+    padding: 0;
+    display: inline-block;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+ul.menu > li {
+    padding: 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    float: left;
+    font-size: 12px;
+    transition: all .3s ease-out;
+}
+
+ul.menu >li:hover{
+    background: var(--color-background);
+    transition: all .3s ease-in;
+}
+
+ul.menu > li > a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-foreground);
+}
+
+ul.menu > li > a > svg {
+    position: relative;
+    padding-right: 3px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.middle-menu {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: right;
+}
+
+/*#endregion */
+
+/*#region LANGUAGE */
+
+.language {
+    display: inline-block;
+    font-size: 14px;    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;    
+}
+
+.language .active {
+    color: var(--color-foreground);
+}
+
+.language > a {
+    color: var(--color-foreground-dimm);
+    text-decoration: none;
+}
+
+/*#endregion */
+
+/*#region THEME */
+
+.theme {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 15px; 
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.theme-icon {
+    width: 18px;
+    height: 18px;
+}
+
+#theme {
+    position: relative;
+    top: 4px;
+    cursor: pointer;
+    color: var(--color-foreground);
+    border: 1px solid var(--color-foreground-dimm);
+    border-radius: 50%;
+    background: none;
+    padding: 3px;
+    transition: all .2s ease-out;
+}
+
+#theme:hover {
+    border-color: var(--color-foreground);
+    transition: all .2s ease-in;
+}
+
+/*#endregion */

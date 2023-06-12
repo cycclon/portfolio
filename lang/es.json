@@ -1,0 +1,13 @@
+{
+    "title": "Ing.",
+    "menu": {
+        "home": "Inicio",
+        "about": "Acerca",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "language": {
+        "english": "English",
+        "spanish": "Spanish"
+    }
+}
