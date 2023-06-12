@@ -14,6 +14,7 @@ function myFunction() {
 // LANGUAGE HANDLING
  
 function getLanguage() {
+    console.log("Entered getLanguage function");
     (localStorage.getItem('language') == null) ? setLanguage('en') : false;
     let language;
     $.ajax({ 
