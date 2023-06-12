@@ -14,18 +14,13 @@ function myFunction() {
 // LANGUAGE HANDLING
  
 function getLanguage() {
+    // console.log("Entered getLanguage function");
     (localStorage.getItem('language') == null) ? setLanguage('en') : false;
     let language;
-
-    $.getJSON(`https://cycclon.github.io/lang/${localStorage.getItem('language')}.json`, function(json) {
-        console.log(json);
-        language = json;
-    });
-
-    // $.ajax({ 
-    // url:  '/lang/' +  localStorage.getItem('language') + '.json', 
-    // dataType: 'json', async: false, dataType: 'json', 
-    // success: function (lang) { language = lang } });
+    $.ajax({ 
+    url:  'lang/' +  localStorage.getItem('language') + '.json', 
+    dataType: 'json', async: false, dataType: 'json', 
+    success: function (lang) { language = lang } });
     return language;
 }
 
