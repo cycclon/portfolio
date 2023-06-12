@@ -12,13 +12,15 @@ function myFunction() {
 }
 
 // LANGUAGE HANDLING
-var language; 
+ 
 function getLanguage() {
     (localStorage.getItem('language') == null) ? setLanguage('en') : false;
+    let language;
     $.ajax({ 
     url:  '/lang/' +  localStorage.getItem('language') + '.json', 
     dataType: 'json', async: false, dataType: 'json', 
     success: function (lang) { language = lang } });
+    return language;
 }
 
 function setLanguage(lang) {
@@ -28,14 +30,15 @@ function setLanguage(lang) {
 // THEME HANDLING
 function toggleTheme() {
     (localStorage.getItem('theme') == null) ? localStorage.setItem('theme', 'dark') : 
-    (localStorage.getItem('theme') === 'dark') ? localStorage.setItem('theme', 'light') 
+    (localStorage.getItem('theme') === 'dark') ? localStorage.setItem('theme', 'light')
     : localStorage.setItem('theme', 'dark');
-    location.reload()
+    location.reload();
 }
 
 $(document).ready(function(){
     // LOAD TEXTS FORM LANG FILES
-    getLanguage()
+    const language = getLanguage();
+    // console.log(language);
     //HEADER
     $('#title').text(language.title);
     //MENU
@@ -66,8 +69,7 @@ $(document).ready(function(){
         $('#english').addClass('active');
     }
 
-    // HOME ANIMATIONS
-    
+    // HOME ANIMATIONS    
     $('#full-title').addClass('visible');
     $('#full-title-separator').addClass('visible');
     $('#country').addClass('visible');
