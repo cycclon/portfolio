@@ -33,7 +33,7 @@ function toggleTheme() {
     location.reload()
 }
 
-jQuery(document).ready(function($){
+$(document).ready(function(){
     // LOAD TEXTS FORM LANG FILES
     getLanguage()
     //HEADER
