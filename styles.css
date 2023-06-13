@@ -205,4 +205,21 @@ section.home .label {
     font-size: 12px;
 }
 
+div.knowledge {
+    position: relative;
+    top: 120px; 
+    width: 98%;
+    border: 1px solid var(--color-header-translucent);
+    padding: 5px;    
+}
+
+div.knowledge > h2 {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--color-header);
+    font-weight: 900;
+}
+
 /*#endregion */

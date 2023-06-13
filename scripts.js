@@ -53,12 +53,18 @@ $(document).ready(function(){
     $('#spanish').text(language.language.spanish);
 
     //HOME
-    $('#title-label').text(language.home.full_title_label)
-    $('#title-text').text(language.home.full_title)
-    $('#country-label').text(language.home.country_label)
-    $('#country-text').html(language.home.country + ` <img src="assets/Argentina.png" />`)
-    $('#birth-label').text(language.home.age_label)
-    $('#birth-text').text(language.home.age + ` (${getAge("12/15/1983")})`)
+    const bookIcon = "<svg xmlns='http://www.w3.org/2000/svg' style='width: 24px; height: 24px; margin-right: 5px' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25' /></svg>";
+    $('#title-label').text(language.home.full_title_label);
+    $('#title-text').text(language.home.full_title);
+    $('#country-label').text(language.home.country_label);
+    $('#country-text').html(language.home.country + ` <img src="assets/Argentina.png" />`);
+    $('#birth-label').text(language.home.age_label);
+    $('#birth-text').text(language.home.age + ` (${getAge("12/15/1983")})`);
+    $('#knowledge').html(bookIcon + language.home.knowledge);
+    $('#languages-label').text(language.home.languages_label);
+    $('#libraries-label').text(language.home.libraries_label);
+    $('#IDEs-label').text(language.home.IDEs_label);
+    $('#DBs-label').text(language.home.DBs_label);
     
 
     //HIGHLIGHTED OPTIONS
@@ -77,6 +83,7 @@ $(document).ready(function(){
     $('#country-separator').addClass('visible');
     $('#date-birth').addClass('visible');
     $('#birth-separator').addClass('visible');
+    
 
 
     // SET THEME

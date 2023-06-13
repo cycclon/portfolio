@@ -16,6 +16,11 @@
         "country_label": "Country: ",
         "country": "Argentina",
         "age_label": "Birth: ",
-        "age": "December 15th, 1983"
+        "age": "December 15th, 1983",
+        "knowledge": "Knowledge",
+        "languages_label": "Languages: ",
+        "libraries_label": "Libraries/Frameworks: ",
+        "IDEs_label": "Development Enviroments: ",
+        "DBs_label": "Database Engines: "
     }
 }

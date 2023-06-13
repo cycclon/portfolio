@@ -16,6 +16,11 @@
         "country_label": "País: ",
         "country": "Argentina",
         "age_label": "Nac.: ",
-        "age": "Diciembre 15, 1983"
+        "age": "Diciembre 15, 1983",
+        "knowledge": "Conocimiento",
+        "languages_label": "Lenguajes",
+        "libraries_label": "Librerías/Entornos: ",
+        "IDEs_label": "Entornos de Desarrollo: ",
+        "DBs_label": "Bases de Datos: "
     }
 }
