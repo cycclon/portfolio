@@ -53,18 +53,34 @@ $(document).ready(function(){
     $('#spanish').text(language.language.spanish);
 
     //HOME
-    const bookIcon = "<svg xmlns='http://www.w3.org/2000/svg' style='width: 24px; height: 24px; margin-right: 5px' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25' /></svg>";
+    const bookIcon = "<svg xmlns='http://www.w3.org/2000/svg' class='section-icon' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25' /></svg>";
+    const briefCaseIcon = "<svg xmlns='http://www.w3.org/2000/svg' class='section-icon' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z' /></svg>";
     $('#title-label').text(language.home.full_title_label);
     $('#title-text').text(language.home.full_title);
     $('#country-label').text(language.home.country_label);
     $('#country-text').html(language.home.country + ` <img src="assets/Argentina.png" />`);
     $('#birth-label').text(language.home.age_label);
     $('#birth-text').text(language.home.age + ` (${getAge("12/15/1983")})`);
-    $('#knowledge').html(bookIcon + language.home.knowledge);
-    $('#languages-label').text(language.home.languages_label);
-    $('#libraries-label').text(language.home.libraries_label);
-    $('#IDEs-label').text(language.home.IDEs_label);
-    $('#DBs-label').text(language.home.DBs_label);
+    $('#knowledge').html(bookIcon + language.home.knowledge.knowledge_title);
+    $('#languages-label').text(language.home.knowledge.languages_label);
+    $('#libraries-label').text(language.home.knowledge.libraries_label);
+    $('#IDEs-label').text(language.home.knowledge.IDEs_label);
+    $('#DBs-label').text(language.home.knowledge.DBs_label);
+    $('#OSs-label').text(language.home.knowledge.OSs_label);
+    $('#experience').html(briefCaseIcon + language.home.experience.experience_title);
+    $('#tp-from').text(language.home.experience.from);
+    $('#tp-to').text(language.home.experience.to);
+    $('#tp-from-date').text(language.home.experience.tp_from_date);
+    $('#tp-to-date').text(language.home.experience.tp_to_date);
+    $('#tp-responsabilities-label').text(language.home.experience.responsabilities_label);
+    $('#tp-roles-label').text(language.home.experience.roles_label);
+    $('#tp-roles').text(language.home.experience.tp_roles);
+    
+    $('#tp-responsabilities').html('<ul>');
+    for(const prop in language.home.experience.tp_responsabilities){        
+        $('#tp-responsabilities').append(`<li>${language.home.experience.tp_responsabilities[prop]}</li>`);
+    }
+    $('#tp-responsabilities').append('</ul>');
     
 
     //HIGHLIGHTED OPTIONS
@@ -83,8 +99,8 @@ $(document).ready(function(){
     $('#country-separator').addClass('visible');
     $('#date-birth').addClass('visible');
     $('#birth-separator').addClass('visible');
-    
-
+    $('#knowledge-section').addClass('visible');
+    $('#experience-section').addClass('visible');
 
     // SET THEME
     (localStorage.getItem('theme') === 'light') ? $('body').addClass('light')

@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="title">
-        <h1><span id="title"></span> Pedro Raúl Spidalieri</h1>
+        <h1><span id="title"></span> Pedro R. Spidalieri</h1>
     </div>
     <div class="middle-menu">  
         <div class="theme">
@@ -58,28 +58,78 @@
     <div class="content">
         <section id="home" class="home">
             <img class="profile-picture" src="assets/13.JPG" alt="">
-            <span id="full-title" class="hidden" style="top: 30px">
+            <span id="full-title" class="hidden" style="top: 50px">
                 <label class="label" id="title-label"></label><label class="text" id="title-text"></label>
             </span>
-            <hr id="full-title-separator" style="top: 30px"/>
-            <span id="country" class="hidden" style="top: 30px; transition-delay: .5s;">
+            <hr id="full-title-separator" style="top: 50px"/>
+            <span id="country" class="hidden" style="top: 50px; transition-delay: .5s;">
                 <label class="label" id="country-label"></label><label class="text" id="country-text"></label>
             </span>
-            <hr id="country-separator" style="top: 30px; transition-delay: .5s"/>
-            <span id="date-birth" class="hidden" style="top: 30px; transition-delay: 1s;">
+            <hr id="country-separator" style="top: 50px; transition-delay: .5s"/>
+            <span id="date-birth" class="hidden" style="top: 50px; transition-delay: 1s;">
                 <label class="label" id="birth-label"></label><label class="text" id="birth-text"></label>
             </span>
-            <hr id="birth-separator" style="top: 30px; transition-delay: 1s"/>
-            <div class="knowledge">
+            <hr id="birth-separator" style="top: 50px; transition-delay: 1s"/>
+            <div id="knowledge-section" class="section" style="transition-delay: 1s;">
                 <h2 id="knowledge"></h2>
                 <label id="languages-label" class="label"></label>
-                <label id="languages">HTML; CSS; JavaScript; C; C++; C#; VB.Net; Java; ASP.NET; VB6; Assembler</label><br>
+                <label id="languages">
+                    <label class="tech">HTML</label>,
+                    <label class="tech">CSS</label>,
+                    <label class="tech">JavaScript</label>,
+                    <label class="tech">C</label>,
+                    <label class="tech">C++;</label>,
+                    <label class="tech">C#</label>,
+                    <label class="tech">VB.Net</label>,
+                    <label class="tech">Java</label>,
+                    <label class="tech">ASP.NET</label>,
+                    <label class="tech">VB6</label>
+                </label><br>
                 <label id="libraries-label" class="label"></label>
-                <label id="libraries">jQuery; Node.js; Express.js; .Net Framework</label><br>
+                <label id="libraries">
+                    <label class="tech">jQuery</label>,
+                    <label class="tech">Node.js</label>,
+                    <label class="tech">Express.js</label>,
+                    <nobr class="tech">.Net Framework</nobr>
+                </label><br>
                 <label id="IDEs-label" class="label"></label>
-                <label id="IDEs">Visual Studio Code; Visual Studio .Net; NetBeans; Eclipse</label><br>
+                <label id="IDEs">
+                    <nobr class="tech">Visual Studio Code</nobr>,
+                    <nobr class="tech">Visual Studio .Net</nobr>,
+                    <label class="tech">NetBeans</label>,
+                    <label class="tech">Eclipse</label>
+                </label><br>
                 <label id="DBs-label" class="label"></label>
-                <label id="DBs">MongoDB; SQL Server; PostGreeSQL; MySQL</label>
+                <label id="DBs">
+                    <label class="tech">MongoDB</label>,
+                    <nobr class="tech">Microsoft SQL Server</nobr>,
+                    <label class="tech">PostGreeSQL</label>,
+                    <label class="tech">MySQL</label>
+                </label><br>
+                <label id="OSs-label" class="label"></label>
+                <label id="OSs">
+                    <nobr class="tech">Arch Linux</nobr>,
+                    <label class="tech">Debian</label>,
+                    <nobr class="tech">MS Windows</nobr>,
+                    <nobr class="tech">MS Windows Server</nobr>
+                </label>
+            </div>
+            <div id="experience-section" class="section" style="transition-delay: 1.5s;">
+                <h2 id="experience"></h2>
+                <h3>Tetra Pak S.R.L.</h3>
+                <label id="tp-from" class="label"></label>
+                <label id="tp-from-date"></label>
+                
+                <label id="tp-to" class="label"></label>
+                <label id="tp-to-date"></label>
+                <br>
+                <label id="tp-roles-label" class="label"></label>
+                <label id="tp-roles"></label><br>
+                <br>
+                <label id="tp-responsabilities-label" class="label"></label>
+                <label id="tp-responsabilities"></label>
+                <br>
+                
             </div>
         </section>
     </div>

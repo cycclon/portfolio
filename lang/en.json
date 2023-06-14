@@ -17,10 +17,30 @@
         "country": "Argentina",
         "age_label": "Birth: ",
         "age": "December 15th, 1983",
-        "knowledge": "Knowledge",
-        "languages_label": "Languages: ",
-        "libraries_label": "Libraries/Frameworks: ",
-        "IDEs_label": "Development Enviroments: ",
-        "DBs_label": "Database Engines: "
+        "knowledge": {
+            "knowledge_title": "Knowledge",
+            "languages_label": "Languages: ",
+            "libraries_label": "Libraries/Frameworks: ",
+            "IDEs_label": "Development Enviroments: ",
+            "DBs_label": "Database Engines: ",
+            "OSs_label": "Operating Systems: "
+        },
+        "experience": {
+            "experience_title": "Experience",
+            "from": "From: ",
+            "to": "To: ",
+            "tp_from_date": "Jun 2010",
+            "tp_to_date": "present",
+            "roles_label": "Roles: ",
+            "tp_roles": "WCM Engineer (World Class Manufacturing); Cost Pillar Member (leader backup); Office Pillar: WCM Team Leader",
+            "responsabilities_label": "Main Responsabilities: ",
+            "tp_responsabilities": {
+                "1": "Ensure correct usage and functioning of production systems (P2 & SAP R/3)",
+                "2": "Provide support to all end users on site",
+                "3": "Provide information from available systems (MS Excel, MS Power BI, SAP Business Objects, SAP R/3)",
+                "4": "Provide reports for controlling operation",
+                "5": "Ensure correct comunication between P2 and SAP R/3 (bridges/iDocs)"
+            }
+        }
     }
 }
