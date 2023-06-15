@@ -29,6 +29,7 @@
             "experience_title": "Experiencia",
             "from": "Desde: ",
             "to": "Hasta: ",
+            "tp_description": "Compañía que produce material de envase para alimentos.",
             "tp_from_date": "Jun 2010",
             "tp_to_date": "presente",
             "roles_label": "Roles: ",
@@ -40,6 +41,17 @@
                 "3": "Proveer información de los sitemas disponibles (MS Excel, MS Power BI, SAP Business Objects, SAP R/3)",
                 "4": "Proveer reportes para la operación de controlling",
                 "5": "Asegurar la correcta comunicación entre los sistemas P2 y SAP R/3 (Puentes/iDocs)"
+            },
+            "grido_description": "Mayor franquicia de heladerías de Argentina",
+            "grido_from_date": "Ene 2016",
+            "grido_to_date": "presente",
+            "grido_roles": "Propietario de Sucursal de Franquicia",
+            "grido_responsabilities": {
+                "1": "Administración completa del negocio",
+                "2": "Contratación y manejo de personal; Salarios; Cargas sociales; Tasas e impuestos; (7 empleados)",
+                "3": "Reposición de mercaderia; Control de stock; Stock de seguridad",
+                "4": "Contabilidad básica/manejo de gastos",
+                "5": "Relaciones con proveedores de productos y servicios"
             }
         }
     }

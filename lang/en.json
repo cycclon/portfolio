@@ -29,6 +29,7 @@
             "experience_title": "Experience",
             "from": "From: ",
             "to": "To: ",
+            "tp_description": "Company that produces food packaging material using mainly carton, alufoil and poliethylene.",
             "tp_from_date": "Jun 2010",
             "tp_to_date": "present",
             "roles_label": "Roles: ",
@@ -40,7 +41,18 @@
                 "3": "Provide information from available systems (MS Excel, MS Power BI, SAP Business Objects, SAP R/3)",
                 "4": "Provide reports for controlling operation",
                 "5": "Ensure correct comunication between P2 and SAP R/3 (bridges/iDocs)"
-            }
+            },
+            "grido_description": "Bigest Icecream store franchise in Argentina",
+            "grido_from_date": "Jan 2016",
+            "grido_to_date": "present",
+            "grido_roles": "Franchise Branch Owner",
+            "grido_responsabilities": {
+                "1": "Entire business administration",
+                "2": "Personnel hiring/handling; Salaries; Taxes; Social Security; (7 employees)",
+                "3": "Goods and add. mat. reposition; stock control; Security Stock",
+                "4": "Basic accounting/expenses management",
+                "5": "Services/products providers relationships"
+            }         
         }
     }
 }

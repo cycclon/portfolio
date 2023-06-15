@@ -68,20 +68,31 @@ $(document).ready(function(){
     $('#DBs-label').text(language.home.knowledge.DBs_label);
     $('#OSs-label').text(language.home.knowledge.OSs_label);
     $('#experience').html(briefCaseIcon + language.home.experience.experience_title);
+    $('#tp-description').text(language.home.experience.tp_description);
     $('#tp-from').text(language.home.experience.from);
     $('#tp-to').text(language.home.experience.to);
     $('#tp-from-date').text(language.home.experience.tp_from_date);
     $('#tp-to-date').text(language.home.experience.tp_to_date);
-    $('#tp-responsabilities-label').text(language.home.experience.responsabilities_label);
     $('#tp-roles-label').text(language.home.experience.roles_label);
     $('#tp-roles').text(language.home.experience.tp_roles);
-    
+    $('#tp-responsabilities-label').text(language.home.experience.responsabilities_label);
     $('#tp-responsabilities').html('<ul>');
     for(const prop in language.home.experience.tp_responsabilities){        
         $('#tp-responsabilities').append(`<li>${language.home.experience.tp_responsabilities[prop]}</li>`);
     }
+    $('#grido-description').text(language.home.experience.grido_description);
     $('#tp-responsabilities').append('</ul>');
-    
+    $('#grido-from').text(language.home.experience.from);
+    $('#grido-to').text(language.home.experience.to);
+    $('#grido-from-date').text(language.home.experience.grido_from_date);
+    $('#grido-to-date').text(language.home.experience.grido_to_date);
+    $('#grido-roles-label').text(language.home.experience.roles_label);
+    $('#grido-roles').text(language.home.experience.grido_roles);
+    $('#grido-responsabilities-label').text(language.home.experience.responsabilities_label);    
+    $('#grido-responsabilities').html('<ul>');
+    for(const prop in language.home.experience.grido_responsabilities){
+        $('#grido-responsabilities').append(`<li>${language.home.experience.grido_responsabilities[prop]}</li>`);
+    }
 
     //HIGHLIGHTED OPTIONS
     if (localStorage.getItem('language')==='es') {

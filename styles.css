@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
 
 html {
     scroll-behavior: smooth;
 }
 
 body {   
-    font-family: "Raleway"; 
+    font-family: "Montserrat"; 
     --color-foreground: white;
     --color-foreground-dimm: #aaa;
     --color-header-translucent: rgba(85, 105, 47, 0.5);
     --color-background: black;
+    --color-background-dim: rgba(50,50,50, .5);
     --color-header: darkolivegreen;
     --color-tech-background: rgba(50, 50, 150, .8);
     --color-tech-shadow: #333;
@@ -28,6 +29,7 @@ body.light {
     --color-header: olive;
     --color-header-translucent: rgba(94, 94, 22, 0.5);
     --color-tech-shadow: #444;
+    --color-background-dim: rgba(30,30,30, .2);
 }
 
 /*#region HEADER */
@@ -185,6 +187,23 @@ section.home {
     margin-left: 10px
 }
 
+.company-description {
+    display: block;
+    font-weight: lighter;
+    font-style: italic;
+    color: var(--color-foreground-dimm);
+    padding: 5px;
+    background-color: var(--color-background-dim);
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.company-logo {
+    display: inline-block;
+    width: 120px;
+}
+
 .profile-picture {
     position: absolute;
     top: 130px;
@@ -249,6 +268,7 @@ div.section > h2 {
     text-transform: uppercase;
     color: var(--color-header);
     font-weight: 900;
+    font-family: "Raleway";
 }
 
 .section-icon {
@@ -258,7 +278,11 @@ div.section > h2 {
 }
 
 div.section > h3 {
+    display: inline-block;
     font-family: "Montserrat";
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
 }
 
 /*#endregion */
