@@ -19,9 +19,10 @@ body {
     --color-tech-shadow: #333;
     --color-links: rgba(0, 150, 255, 0.7);
     --color-links-hover: rgba(0, 150, 255, 1);
-    margin: 0;
+    margin: 0 auto;
     background: var(--color-background);
     color: var(--color-foreground);
+    max-width: 600px;
 }
 
 body.light {
@@ -53,6 +54,7 @@ h1 {
     z-index: 9999;
     display: inline-block;
     width: 100%;
+    max-width: 600px;
     background-color: var(--color-header); 
     text-align: center; 
      

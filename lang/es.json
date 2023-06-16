@@ -17,6 +17,8 @@
         "country": "Argentina",
         "age_label": "Nac.: ",
         "age": "Diciembre 15, 1983",
+        "spl_label": "Idiomas: ",
+        "spl": "Español (nat.), Inglés (fluido)",
         "knowledge": {
             "knowledge_title": "Conocimiento",
             "languages_label": "Lenguajes de Programación",
