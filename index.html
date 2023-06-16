@@ -58,18 +58,22 @@
     <div class="content">
         <section id="home" class="home">
             <img class="profile-picture" src="assets/13.JPG" alt="">
-            <span id="full-title" class="hidden" style="top: 50px">
+            <span id="full-title" class="hidden" style="top: 45px">
                 <label class="label" id="title-label"></label><label class="text" id="title-text"></label>
             </span>
-            <hr id="full-title-separator" style="top: 50px"/>
-            <span id="country" class="hidden" style="top: 50px; transition-delay: .5s;">
+            <hr id="full-title-separator" style="top: 45px"/>
+            <span id="country" class="hidden" style="top: 45px; transition-delay: .5s;">
                 <label class="label" id="country-label"></label><label class="text" id="country-text"></label>
             </span>
-            <hr id="country-separator" style="top: 50px; transition-delay: .5s"/>
-            <span id="date-birth" class="hidden" style="top: 50px; transition-delay: 1s;">
+            <hr id="country-separator" style="top: 45px; transition-delay: .5s"/>
+            <span id="date-birth" class="hidden" style="top: 45px; transition-delay: 1s;">
                 <label class="label" id="birth-label"></label><label class="text" id="birth-text"></label>
             </span>
-            <hr id="birth-separator" style="top: 50px; transition-delay: 1s"/>
+            <hr id="birth-separator" style="top: 45px; transition-delay: 1s"/>
+            <span id="sp-languages" class="hidden" style="top: 45px; transition-delay: 1.5s;">
+                <label class="label" id="spl-label"></label><label class="text" id="spl-text"></label>
+            </span>
+            <hr id="spl-separator" style="top: 45px; transition-delay: 1.5s"/>
             <div id="knowledge-section" class="section" style="transition-delay: 1s;">
                 <h2 id="knowledge"></h2>
                 <label id="languages-label" class="label"></label>
@@ -87,6 +91,7 @@
                 </label><br>
                 <label id="libraries-label" class="label"></label>
                 <label id="libraries">
+                    <label class="tech">React.js</label>,
                     <label class="tech">jQuery</label>,
                     <label class="tech">Node.js</label>,
                     <label class="tech">Express.js</label>,
@@ -98,6 +103,8 @@
                     <nobr class="tech">Visual Studio .Net</nobr>,
                     <label class="tech">NetBeans</label>,
                     <label class="tech">Eclipse</label>
+                    <nobr class="tech">Mongo DB Compass</nobr>
+                    <nobr class="tech">MS SQL Server Management Studio</nobr>
                 </label><br>
                 <label id="DBs-label" class="label"></label>
                 <label id="DBs">
@@ -108,8 +115,7 @@
                 </label><br>
                 <label id="OSs-label" class="label"></label>
                 <label id="OSs">
-                    <nobr class="tech">Arch Linux</nobr>,
-                    <label class="tech">Debian</label>,
+                    <nobr class="tech">Linux (Arch; Debian)</nobr>,
                     <nobr class="tech">MS Windows</nobr>,
                     <nobr class="tech">MS Windows Server</nobr>
                 </label>
@@ -118,7 +124,9 @@
                 <h2 id="experience"></h2>
                 <img src="assets/tetra-pak-two-liner.png" class="company-logo" />
                 <!-- <h3>Tetra Pak S.R.L.</h3> -->
-                <label id="tp-description" class="company-description"></label><br><br>
+                <label id="tp-description" class="company-description"></label>
+                <div class="centered-link"><a target="_blank" href="https://www.tetrapak.com/">TetraPak.com</a></div>
+                <br>
                 <label id="tp-from" class="label"></label>
                 <label id="tp-from-date"></label>
                 
@@ -133,7 +141,8 @@
                 <br>
                 <img src="assets/Grido.png" class="company-logo" /><br><br>
                 <!-- <h3>Grido</h3> -->
-                <label id="grido-description" class="company-description"></label><br><br>
+                <label id="grido-description" class="company-description"></label>
+                <div class="centered-link"><a target="_blank" href="https://argentina.gridohelado.com/">GridoHelado.com</a></div><br />
                 <label id="grido-description"></label>
                 <label id="grido-from" class="label"></label>
                 <label id="grido-from-date"></label>
@@ -147,9 +156,54 @@
                 <label id="grido-responsabilities"></label>
             </div>
         </section>
+        <section id="section" class="home">
+            <div id="projects-section" class="section">
+                <h2 id="projects-title"></h2>
+                <h3>Best Movies</h3>
+                <label id="best-movies-description" class="company-description"></label>
+                <div class="centered-link"><a target="_blank" href="https://bestmovies.glitch.me">Best Movies</a></div><br />
+                <label class="label">Front end: </label>
+                    <label class="tech">HTML</label>,
+                    <label class="tech">CSS</label>,
+                    <label class="tech">JavaScript</label>,
+                    <label class="tech">React.js</label>,
+                    <label class="tech">jQuery</label>
+                <br>
+                <label class="label">Back end: </label>
+                    <label class="tech">Node.js</label>,
+                    <label class="tech">Express.js</label>
+                <br>
+                <label id="bm-database" class="label"></label>
+                    <label class="tech">MongoDB</label>
+                <br>
+                <label id="bm-IDEs" class="label"></label>
+                    <nobr class="tech">Visual Studio Code</nobr>,
+                    <nobr class="tech">Mongo DB Compass</nobr>
+                <br>
+                <h3>Wordle Clone</h3>
+                    <label id="wc-description" class="company-description"></label>
+                    <div class="centered-link"><a target="_blank" href="https://mywordle.glitch.me">Wordle Game</a></div><br />
+                    <label class="label">Front end: </label>
+                        <label class="tech">HTML</label>,
+                        <label class="tech">CSS</label>,
+                        <label class="tech">JavaScript</label>,
+                        <label class="tech">React.js</label>,
+                        <label class="tecsh">jQuery</label>
+                    <br>
+                    <label class="label">Back end: </label>
+                        <label class="tech">Node.js</label>,
+                        <label class="tech">Express.js</label>
+                    <br>
+                    <label id="wc-database" class="label"></label>
+                        <label class="tech">MongoDB</label>
+                    <br>
+                    <label id="wc-IDEs" class="label"></label>
+                        <nobr class="tech">Visual Studio Code</nobr>,
+                        <nobr class="tech">Mongo DB Compass</nobr>
+            </div>
+        </section>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="scripts.js" type="text/javascript">
-    </script>
+    <script src="scripts.js" type="text/javascript"></script>
 </body>
 </html>

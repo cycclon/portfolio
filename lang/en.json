@@ -17,9 +17,11 @@
         "country": "Argentina",
         "age_label": "Birth: ",
         "age": "December 15th, 1983",
+        "spl_label": "Languages: ",
+        "spl": "Spanish (nat.), English (fluid)",
         "knowledge": {
             "knowledge_title": "Knowledge",
-            "languages_label": "Languages: ",
+            "languages_label": "Programming Languages: ",
             "libraries_label": "Libraries/Frameworks: ",
             "IDEs_label": "Development Enviroments: ",
             "DBs_label": "Database Engines: ",
@@ -54,5 +56,14 @@
                 "5": "Services/products providers relationships"
             }         
         }
+    },
+    "projects": {
+        "projects_title": "Projects",
+        "best_movies": {
+            "best_movies_description": "Allows you to keep track of Oscars winners and nomenees you have seen. You can also recomend movies to other users."
+        },
+        "database": "Database: ",
+        "IDEs_tools": "IDEs/Tools used: ",
+        "wc_description": "Classic Wordle game clone with some added features."
     }
 }

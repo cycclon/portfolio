@@ -61,6 +61,9 @@ $(document).ready(function(){
     $('#country-text').html(language.home.country + ` <img src="assets/Argentina.png" />`);
     $('#birth-label').text(language.home.age_label);
     $('#birth-text').text(language.home.age + ` (${getAge("12/15/1983")})`);
+    $('#spl-label').text(language.home.spl_label);
+    $('#spl-text').text(language.home.spl);
+
     $('#knowledge').html(bookIcon + language.home.knowledge.knowledge_title);
     $('#languages-label').text(language.home.knowledge.languages_label);
     $('#libraries-label').text(language.home.knowledge.libraries_label);
@@ -94,6 +97,16 @@ $(document).ready(function(){
         $('#grido-responsabilities').append(`<li>${language.home.experience.grido_responsabilities[prop]}</li>`);
     }
 
+    //PROJECTS
+    $('#projects-title').html(briefCaseIcon + language.projects.projects_title);
+    $('#best-movies-description').text(language.projects.best_movies.best_movies_description);
+    $('#bm-database').text(language.projects.database);
+    $('#bm-IDEs').text(language.projects.IDEs_tools);
+    $('#wc-database').text(language.projects.database);
+    $('#wc-IDEs').text(language.projects.IDEs_tools);
+    $('#wc-description').text(language.projects.wc_description);
+
+
     //HIGHLIGHTED OPTIONS
     if (localStorage.getItem('language')==='es') {
         $('#spanish').addClass('active');
@@ -110,8 +123,11 @@ $(document).ready(function(){
     $('#country-separator').addClass('visible');
     $('#date-birth').addClass('visible');
     $('#birth-separator').addClass('visible');
+    $('#sp-languages').addClass('visible');
+    $('#spl-separator').addClass('visible');
     $('#knowledge-section').addClass('visible');
     $('#experience-section').addClass('visible');
+    $('#projects-section').addClass('visible');
 
     // SET THEME
     (localStorage.getItem('theme') === 'light') ? $('body').addClass('light')

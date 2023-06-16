@@ -19,7 +19,7 @@
         "age": "Diciembre 15, 1983",
         "knowledge": {
             "knowledge_title": "Conocimiento",
-            "languages_label": "Lenguajes",
+            "languages_label": "Lenguajes de Programación",
             "libraries_label": "Librerías/Entornos: ",
             "IDEs_label": "Entornos de Desarrollo: ",
             "DBs_label": "Bases de Datos: ",
@@ -53,6 +53,15 @@
                 "4": "Contabilidad básica/manejo de gastos",
                 "5": "Relaciones con proveedores de productos y servicios"
             }
-        }
+        }        
+    },
+    "projects": {
+        "projects_title": "Proyectos",
+        "best_movies": {
+            "best_movies_description": "Permite llevar un registro de películas ganadoas y nominadas al Oscar que viste. Pemite también recomendar películas a otros usuario."
+        },
+        "database": "Base de datos: ",
+        "IDEs_tools": "IDEs/Herramientas usadas: ",
+        "wc_description": "Juego Wordle clásico con algunas características agregadas."
     }
 }
