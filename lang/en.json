@@ -1,5 +1,6 @@
 {
     "title": "Engr.",
+    "close_image": "Click the image to close.",
     "menu": {
         "home": "Home",
         "about": "About Me",
@@ -17,15 +18,24 @@
         "country": "Argentina",
         "age_label": "Birth: ",
         "age": "December 15th, 1983",
-        "spl_label": "Languages: ",
-        "spl": "Spanish (nat.), English (fluid)",
+        "spl_label": "Lang.: ",
+        "spl": "Spanish (nat.), English (fluent)",
         "knowledge": {
             "knowledge_title": "Knowledge",
             "languages_label": "Programming Languages: ",
             "libraries_label": "Libraries/Frameworks: ",
             "IDEs_label": "Development Enviroments: ",
             "DBs_label": "Database Engines: ",
-            "OSs_label": "Operating Systems: "
+            "OSs_label": "Operating Systems: ",
+            "methodologies": {
+                "methodologies_label": "Methodologies: ",
+                "oo": "Object Oriented",
+                "rest": "Representational State Transfer (REST)",
+                "layers": "Layered Design",
+                "mvc": "Model View Controller",
+                "wpf": "Windows Presentation Foundation"
+            }
+            
         },
         "experience": {
             "experience_title": "Experience",

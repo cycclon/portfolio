@@ -118,7 +118,15 @@
                     <nobr class="tech">Linux (Arch; Debian)</nobr>,
                     <nobr class="tech">MS Windows</nobr>,
                     <nobr class="tech">MS Windows Server</nobr>
-                </label>
+                </label><br>
+                <label id="methodologies-label" class="label"></label>
+                    <label id="methodologies">
+                        <nobr id="oo" class="tech"></nobr>,
+                        <nobr id="rest" class="tech"></nobr>,
+                        <nobr id="layers" class="tech"></nobr>,
+                        <nobr id="mvc" class="tech"></nobr>,
+                        <nobr id="wpf" class="tech"></nobr>
+                    </label>
             </div>
             <div id="experience-section" class="section" style="transition-delay: 1.5s;">
                 <h2 id="experience"></h2>
@@ -138,8 +146,8 @@
                 <br>
                 <label id="tp-responsabilities-label" class="label"></label>
                 <label id="tp-responsabilities"></label>
-                <br>
-                <img src="assets/Grido.png" class="company-logo" /><br><br>
+                <br><br><br>
+                <img src="assets/Grido.png" class="company-logo" /><br>
                 <!-- <h3>Grido</h3> -->
                 <label id="grido-description" class="company-description"></label>
                 <div class="centered-link"><a target="_blank" href="https://argentina.gridohelado.com/">GridoHelado.com</a></div><br />
@@ -160,6 +168,32 @@
             <div id="projects-section" class="section">
                 <h2 id="projects-title"></h2>
                 <h3>Best Movies</h3>
+                <div id="bm-slider-wrapper" class="slider-wrapper">
+                    <div class="slider">
+                        <img src="assets/best_movies/bm-home-tumb.png" id="bm-slide-1" 
+                            onclick="enlarge('bm-modal', 'assets/best_movies/bm-home.png')">
+                        <img src="assets/best_movies/bm-login-tumb.png" id="bm-slide-2" 
+                            onclick="enlarge('bm-modal', 'assets/best_movies/bm-login.png')">
+                        <img src="assets/best_movies/bm-movie-details-tumb.png" id="bm-slide-3" 
+                            onclick="enlarge('bm-modal', 'assets/best_movies/bm-movie-details.png')">
+                        <img src="assets/best_movies/bm-recomendation-tumb.png" id="bm-slide-4"  
+                            onclick="enlarge('bm-modal', 'assets/best_movies/bm-recomendation.png')">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#bm-slide-1"></a>
+                        <a href="#bm-slide-2"></a>
+                        <a href="#bm-slide-3"></a>
+                        <a href="#bm-slide-4"></a>
+                    </div>
+                </div>
+                
+                <dialog class="modal-slider" id="bm-modal" modal>
+                    <label id="close-sup" class="hint">Click image to close</label>
+                    <img id="fs-image"  src="" class="full-screen-img" onclick="closeIS('bm-modal')">
+                    <label id="close-inf" class="hint">Click image to close</label>
+                </dialog>
+                
+                <br><br>
                 <label id="best-movies-description" class="company-description"></label>
                 <div class="centered-link"><a target="_blank" href="https://bestmovies.glitch.me">Best Movies</a></div><br />
                 <label class="label">Front end: </label>

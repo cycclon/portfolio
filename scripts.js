@@ -26,7 +26,18 @@ function getLanguage() {
 
 function setLanguage(lang) {
     localStorage.setItem('language', lang);
-}    
+}   
+
+// ENLARGE IMAGE SLIDER
+function enlarge(slider, image){
+    document.getElementById(slider).showModal();
+    document.getElementById('fs-image').setAttribute('src', image);
+}
+
+// CLOSE IMAGE SLIDER
+function closeIS(slider){
+    document.getElementById(slider).close();
+}
 
 // THEME HANDLING
 function toggleTheme() {
@@ -52,6 +63,10 @@ $(document).ready(function(){
     $('#english').text(language.language.english);
     $('#spanish').text(language.language.spanish);
 
+    // IMAGE MODAL
+    $('#close-sup').text(language.close_image);
+    $('#close-inf').text(language.close_image);
+
     //HOME
     const bookIcon = "<svg xmlns='http://www.w3.org/2000/svg' class='section-icon' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25' /></svg>";
     const briefCaseIcon = "<svg xmlns='http://www.w3.org/2000/svg' class='section-icon' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z' /></svg>";
@@ -63,13 +78,20 @@ $(document).ready(function(){
     $('#birth-text').text(language.home.age + ` (${getAge("12/15/1983")})`);
     $('#spl-label').text(language.home.spl_label);
     $('#spl-text').text(language.home.spl);
-
     $('#knowledge').html(bookIcon + language.home.knowledge.knowledge_title);
     $('#languages-label').text(language.home.knowledge.languages_label);
     $('#libraries-label').text(language.home.knowledge.libraries_label);
     $('#IDEs-label').text(language.home.knowledge.IDEs_label);
     $('#DBs-label').text(language.home.knowledge.DBs_label);
     $('#OSs-label').text(language.home.knowledge.OSs_label);
+    $('#methodologies-label').text(language.home.knowledge.methodologies.methodologies_label);
+    $('#oo').text(language.home.knowledge.methodologies.oo);
+    $('#rest').text(language.home.knowledge.methodologies.rest);
+    $('#layers').text(language.home.knowledge.methodologies.layers);
+    $('#mvc').text(language.home.knowledge.methodologies.mvc);
+    $('#wpf').text(language.home.knowledge.methodologies.wpf);
+
+    //EXPERIENCE
     $('#experience').html(briefCaseIcon + language.home.experience.experience_title);
     $('#tp-description').text(language.home.experience.tp_description);
     $('#tp-from').text(language.home.experience.from);
@@ -151,5 +173,5 @@ $(document).ready(function(){
             age--;
         }
         return age;
-    }
+    }    
 });

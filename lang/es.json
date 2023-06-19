@@ -1,5 +1,6 @@
 {
     "title": "Ing.",
+    "close_image": "Click sobre la imagen para cerrar.",
     "menu": {
         "home": "Inicio",
         "about": "Acerca",
@@ -25,7 +26,15 @@
             "libraries_label": "Librerías/Entornos: ",
             "IDEs_label": "Entornos de Desarrollo: ",
             "DBs_label": "Bases de Datos: ",
-            "OSs_label": "Sistemas Operativos: "
+            "OSs_label": "Sistemas Operativos: ",
+            "methodologies": {
+                "methodologies_label": "Metodologías: ",
+                "oo": "Orientación a Objetos",
+                "rest": "Representational State Transfer (REST)",
+                "layers": "Diseño en Capas",
+                "mvc": "Modelo, Vista, Controlador (MVC)",
+                "wpf": "Windows Presentation Foundation"
+            }
         },        
         "experience": {
             "experience_title": "Experiencia",

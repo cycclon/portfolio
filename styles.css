@@ -14,6 +14,7 @@ body {
     --color-header-translucent: rgba(85, 105, 47, 0.5);
     --color-background: black;
     --color-background-dim: rgba(50,50,50, .5);
+    --color-background-translucent: rgba(0,0,0, .8);
     --color-header: darkolivegreen;
     --color-tech-background: rgba(50, 50, 150, .8);
     --color-tech-shadow: #333;
@@ -89,6 +90,15 @@ a:hover {
 .centered-link {
     width: 100%;
     text-align: center;
+}
+
+label.hint {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+    color: var(--color-foreground-dimm);
 }
 
 
@@ -272,7 +282,7 @@ section .label {
 
 div.section {
     position: relative;
-    top: 140px; 
+    top: 110px; 
     width: 98%;
     border: 1px solid var(--color-header-translucent);
     padding: 10px 5px;
@@ -309,6 +319,71 @@ div.section > h3 {
     margin-bottom: 5px;
     width: 100%;
     text-align: center;
+}
+
+/*#endregion */
+
+/*#region IMAGE SLIDER */
+
+.slider-wrapper {
+    position: relative;
+    max-width: 450px;
+    max-height: 450px;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: .5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    max-height: 450px;
+    cursor: pointer;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: .75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.modal-slider {
+    background: var(--color-background-translucent);        
+    position: fixed;
+    max-width: 100% !important;
+    min-height: 100% !important;
+}
+
+.modal-slider img {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /*#endregion */
