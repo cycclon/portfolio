@@ -45,7 +45,7 @@
                 </a>
             </li>                
             <li>
-                <a href="">
+                <a href="#c-section">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                     </svg><span id="contact" />
@@ -73,7 +73,7 @@
             <span id="sp-languages" class="hidden" style="top: 45px; transition-delay: 1.5s;">
                 <label class="label" id="spl-label"></label><label class="text" id="spl-text"></label>
             </span>
-            <hr id="spl-separator" style="top: 45px; transition-delay: 1.5s"/>
+            <hr id="spl-separator" style="top: 45px; transition-delay: 1.5s"/>            
             <div id="knowledge-section" class="section" style="transition-delay: 1s;">
                 <h2 id="knowledge"></h2>
                 <label id="languages-label" class="label"></label>
@@ -128,9 +128,38 @@
                         <nobr id="wpf" class="tech"></nobr>
                     </label>
             </div>
+            <div id="studies-section" class="section">
+                <h2 id="studies-title"></h2>
+                <img src="assets/epgm.jpg" class="company-logo" style="width: 150px;" />
+                <div class="centered-link"><a target="_blank" href="https://www.facebook.com/escgabmistral">Gabriela Mistral (FB)</a></div>
+                <br>
+                <label class="label" id="graduate-label"></label>
+                <label class="text" id="graduate-text"></label>
+                <br>
+                <label class="label" id="gt-year"></label>
+                <label class="text" id="gt-text">2001</label>
+                <br>
+                <br>
+                <img src="assets/uai.png" class="company-logo" style="width: 200px;" />
+                <div class="centered-link"><a target="_blank" href="https://uai.edu.ar/">UAI.edu.ar</a></div><br>
+                <label id="st-degree-label" class="label"></label>
+                <label id="st-degree-text" class="text"></label>
+                <br>
+                <label id="st-year-label" class="label"></label>
+                <label class="text">2007</label>
+                <br>
+                <br>
+                <img src="assets/utn.png" class="company-logo" style="width: 200px;" />
+                <div class="centered-link"><a target="_blank" href="http://www.frlr.utn.edu.ar/">UTN La Rioja</a></div><br>
+                <label id="mba-degree-label" class="label"></label>
+                <label id="mba-degree-text" class="text"></label>
+                <br>
+                <label id="mba-year-label" class="label"></label>
+                <label class="text">2016</label>
+            </div>
             <div id="experience-section" class="section" style="transition-delay: 1.5s;">
                 <h2 id="experience"></h2>
-                <img src="assets/tetra-pak-two-liner.png" class="company-logo" />
+                <img src="assets/tetra-pak-two-liner.png" class="company-logo" style="width: 200px;" />
                 <!-- <h3>Tetra Pak S.R.L.</h3> -->
                 <label id="tp-description" class="company-description"></label>
                 <div class="centered-link"><a target="_blank" href="https://www.tetrapak.com/">TetraPak.com</a></div>
@@ -213,27 +242,63 @@
                 <label id="bm-IDEs" class="label"></label>
                     <nobr class="tech">Visual Studio Code</nobr>,
                     <nobr class="tech">Mongo DB Compass</nobr>
-                <br>
+                <br><br><br>
                 <h3>Wordle Clone</h3>
-                    <label id="wc-description" class="company-description"></label>
-                    <div class="centered-link"><a target="_blank" href="https://mywordle.glitch.me">Wordle Game</a></div><br />
-                    <label class="label">Front end: </label>
-                        <label class="tech">HTML</label>,
-                        <label class="tech">CSS</label>,
-                        <label class="tech">JavaScript</label>,
-                        <label class="tech">React.js</label>,
-                        <label class="tech">jQuery</label>
-                    <br>
-                    <label class="label">Back end: </label>
-                        <label class="tech">Node.js</label>,
-                        <label class="tech">Express.js</label>
-                    <br>
-                    <label id="wc-database" class="label"></label>
-                        <label class="tech">MongoDB</label>
-                    <br>
-                    <label id="wc-IDEs" class="label"></label>
-                        <nobr class="tech">Visual Studio Code</nobr>,
-                        <nobr class="tech">Mongo DB Compass</nobr>
+                <div id="wg-slider-wrapper" class="slider-wrapper">
+                    <div class="slider">
+                        <img src="assets/wordle/w-round1-tumb.png" id="wg-slide-1" 
+                            onclick="enlarge('bm-modal', 'assets/wordle/w-round1.png')">
+                        <img src="assets/wordle/w-rules-tumb.png" id="wg-slide-2" 
+                            onclick="enlarge('bm-modal', 'assets/wordle/w-rules.png')">
+                        <img src="assets/wordle/w-win-tumb.png" id="wg-slide-3" 
+                            onclick="enlarge('bm-modal', 'assets/wordle/w-win.png')">
+                        <img src="assets/wordle/w-win-rate-tumb.png" id="wg-slide-4"  
+                            onclick="enlarge('bm-modal', 'assets/wordle/w-win-rate.png')">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#wg-slide-1"></a>
+                        <a href="#wg-slide-2"></a>
+                        <a href="#wg-slide-3"></a>
+                        <a href="#wg-slide-4"></a>
+                    </div>
+                </div>
+                <br><br>
+                <label id="wc-description" class="company-description"></label>
+                <div class="centered-link"><a target="_blank" href="https://mywordle.glitch.me">Wordle Game</a></div><br />
+                <label class="label">Front end: </label>
+                    <label class="tech">HTML</label>,
+                    <label class="tech">CSS</label>,
+                    <label class="tech">JavaScript</label>,
+                    <label class="tech">React.js</label>,
+                    <label class="tech">jQuery</label>
+                <br>
+                <label class="label">Back end: </label>
+                    <label class="tech">Node.js</label>,
+                    <label class="tech">Express.js</label>
+                <br>
+                <label id="wc-database" class="label"></label>
+                    <label class="tech">MongoDB</label>
+                <br>
+                <label id="wc-IDEs" class="label"></label>
+                    <nobr class="tech">Visual Studio Code</nobr>,
+                    <nobr class="tech">Mongo DB Compass</nobr>
+            </div>
+        </section>
+        <section id="c-section" class="home">
+            <div id="contact-section" class="section">
+                <h2 id="contact-title"></h2>
+                <label id="email" class="label"></label>
+                <label class="text">pedro.spidalieri@gmail.com</label>
+                <br>
+                <label id="phone" class="label"></label>
+                <label class="text">+54</label> <label class="text">380-4280591</label>
+                <br>
+                <label id="social-media" class="label social-media"></label>
+                <a class="social-media" href="https://www.linkedin.com/in/pedro-spidalieri-39a362114"><img src="assets/in-icon.png"></a>
+                <a class="social-media" href="https://github.com/cycclon/"><img src="assets/gh-icon.png"></a>
+                <a class="social-media" href="https://www.facebook.com/pedro.spidalieri" target="_blank"><img src="assets/fb-icon.png" alt=""></a>
+                <a class="social-media" href="https://www.instagram.com/cycclon/" target="_blank"><img src="assets/ig-icon.png" alt=""></a>
+                
             </div>
         </section>
     </div>

@@ -387,3 +387,17 @@ div.section > h3 {
 }
 
 /*#endregion */
+
+/*#region CONTACT */
+
+.label.social-media {
+    display: inline-block;
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+a.social-media {
+    display: inline-block;
+    vertical-align: middle;
+}
+/*#endregion */

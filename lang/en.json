@@ -20,6 +20,17 @@
         "age": "December 15th, 1983",
         "spl_label": "Lang.: ",
         "spl": "Spanish (nat.), English (fluent)",
+        "studies": {
+            "studies_title": "Studies",
+            "st_degree_label": "Degree: ",
+            "st_degree_text": "Information Systems Engineer",
+            "st_year": "Year: ",
+            "graduate_label": "High School Title: ",
+            "graduate_text": "Graduate with orientation in English & Computer Science",
+            "mba_degree_label": "Master's Degree: ",
+            "mba_degree_text": "Master's in Business Administration (unfinished thesis)"            
+
+        },
         "knowledge": {
             "knowledge_title": "Knowledge",
             "languages_label": "Programming Languages: ",
@@ -75,5 +86,11 @@
         "database": "Database: ",
         "IDEs_tools": "IDEs/Tools used: ",
         "wc_description": "Classic Wordle game clone with some added features."
+    },
+    "contact": {
+        "contact_title": "Contact Information",
+        "email": "E-Mail: ",
+        "phone": "Phone: ",
+        "social_media": "Social Media: "
     }
 }
