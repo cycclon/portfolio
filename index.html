@@ -102,8 +102,8 @@
                     <nobr class="tech">Visual Studio Code</nobr>,
                     <nobr class="tech">Visual Studio .Net</nobr>,
                     <label class="tech">NetBeans</label>,
-                    <label class="tech">Eclipse</label>
-                    <nobr class="tech">Mongo DB Compass</nobr>
+                    <label class="tech">Eclipse</label>,
+                    <nobr class="tech">Mongo DB Compass</nobr>,
                     <nobr class="tech">MS SQL Server Management Studio</nobr>
                 </label><br>
                 <label id="DBs-label" class="label"></label>
@@ -125,7 +125,15 @@
                         <nobr id="rest" class="tech"></nobr>,
                         <nobr id="layers" class="tech"></nobr>,
                         <nobr id="mvc" class="tech"></nobr>,
-                        <nobr id="wpf" class="tech"></nobr>
+                        <nobr id="wpf" class="tech"></nobr>,
+                        <nobr id="uml" class="tech"></nobr>
+                    </label><br>
+                <label id="modeling-tools-label" class="label"></label>
+                    <label id="modeling-tools">
+                        <nobr class="tech">Adobe Pohotoshop</nobr>,
+                        <nobr class="tech">Gimp</nobr>,
+                        <nobr class="tech">Sparx Systems Enterprise Architect</nobr>,
+                        <nobr class="tech">Microsoft Visio</nobr>
                     </label>
             </div>
             <div id="studies-section" class="section">
@@ -196,6 +204,140 @@
         <section id="p-section" class="home">
             <div id="projects-section" class="section">
                 <h2 id="projects-title"></h2>
+
+                <h3 id="vouchers-title"></h3>
+                <div id="siv-slider-wrapper" class="slider-wrapper">
+                    <div class="slider">
+                        <img src="assets/vales/dashboard-tumb.png" id="siv-slide-1" 
+                            onclick="enlarge('bm-modal', 'assets/vales/dashboard.png')">
+                        <img src="assets/vales/generate-vouchers-tumb.png" id="siv-slide-2" 
+                            onclick="enlarge('bm-modal', 'assets/vales/generate-vouchers.png')">
+                        <img src="assets/vales/access-card-tumb.png" id="siv-slide-3" 
+                            onclick="enlarge('bm-modal', 'assets/vales/access-card.png')">
+                        <img src="assets/vales/voucher-scanning-tumb.png" id="siv-slide-4"  
+                            onclick="enlarge('bm-modal', 'assets/vales/voucher-scanning.png')">
+                        <img src="assets/vales/shifts-tumb.png" id="siv-slide-5"  
+                            onclick="enlarge('bm-modal', 'assets/vales/shifts.png')">
+                        <img src="assets/vales/user-details-tumb.png" id="siv-slide-6"  
+                            onclick="enlarge('bm-modal', 'assets/vales/user-details.png')">
+                        <img src="assets/vales/layers-design-tumb.png" id="siv-slide-7"  
+                            onclick="enlarge('bm-modal', 'assets/vales/layers-design.png')">
+                        <img src="assets/vales/classes-vouchers-tumb.png" id="siv-slide-8"  
+                            onclick="enlarge('bm-modal', 'assets/vales/classes-vouchers.png')">
+                        <img src="assets/vales/sequence-login-tumb.png" id="siv-slide-9"  
+                            onclick="enlarge('bm-modal', 'assets/vales/sequence-login.png')">                        
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#siv-slide-1"></a>
+                        <a href="#siv-slide-2"></a>
+                        <a href="#siv-slide-3"></a>
+                        <a href="#siv-slide-4"></a>
+                        <a href="#siv-slide-5"></a>
+                        <a href="#siv-slide-6"></a>
+                        <a href="#siv-slide-7"></a>
+                        <a href="#siv-slide-8"></a>
+                        <a href="#siv-slide-9"></a>
+                    </div>
+                </div>
+                
+                <dialog class="modal-slider" id="bm-modal" modal>
+                    <label id="close-sup" class="hint">Click image to close</label>
+                    <img id="fs-image"  src="" class="full-screen-img" onclick="closeIS('bm-modal')">
+                    <label id="close-inf" class="hint">Click image to close</label>
+                </dialog>
+                
+                <br><br>
+                <label id="siv-description" class="company-description"></label>
+                <br />
+                <label id="siv-year" class="label"></label>
+                    <label>2009</label>
+                <br>
+                <label id="siv-architecture" class="label"></label>
+                    <nobr class="tech">Desktop application (Windows)</nobr>,
+                    <nobr class="tech">Layered Design</nobr>,
+                    <nobr class="tech">Object Oriented</nobr>
+                <br>
+                <label id="siv-language" class="label"></label>
+                    <label class="tech">VB.Net</label>
+                <br>
+                <label id="siv-database" class="label"></label>
+                    <nobr class="tech">SQL Server Express</nobr>
+                <br>
+                <label id="siv-IDEs" class="label"></label>
+                    <nobr class="tech">Visual Studio .Net</nobr>,
+                    <nobr class="tech">SQL Server Management Studio</nobr>
+                <br>
+                <label id="siv-modeling" class="label"></label>
+                    <nobr class="tech">Sparx Systems Enterprise Architect</nobr>
+                    <nobr class="tech">Adobe Photoshop</nobr>
+                <br>
+                <label id="siv-functionality-label" class="label"></label>
+                <label id="siv-functionality"></label>
+                <br><br><br>
+
+                <h3 id="bic-title"></h3>
+                <div id="bic-slider-wrapper" class="slider-wrapper">
+                    <div class="slider">
+                        <img src="assets/consultorio/login-tumb.png" id="bic-slide-1" 
+                            onclick="enlarge('bm-modal', 'assets/consultorio/login.png')">
+                        <img src="assets/consultorio/appointments-tumb.png" id="bic-slide-2" 
+                            onclick="enlarge('bm-modal', 'assets/consultorio/appointments.png')">
+                        <img src="assets/consultorio/main-menu-tumb.png" id="bic-slide-3" 
+                            onclick="enlarge('bm-modal', 'assets/consultorio/main-menu.png')">
+                        <img src="assets/consultorio/pacient-details-tumb.png" id="bic-slide-4"  
+                            onclick="enlarge('bm-modal', 'assets/consultorio/pacient-details.png')">
+                        <img src="assets/consultorio/user-menu-tumb.png" id="bic-slide-5"  
+                            onclick="enlarge('bm-modal', 'assets/consultorio/user-menu.png')">
+                        <img src="assets/consultorio/class-acounts-tumb.png" id="bic-slide-6"  
+                            onclick="enlarge('bm-modal', 'assets/consultorio/class-acounts.png')">
+                        <img src="assets/consultorio/class-practices-tumb.png" id="bic-slide-7"  
+                            onclick="enlarge('bm-modal', 'assets/consultorio/class-practices.png')">
+                        <img src="assets/consultorio/domain-model-tumb.png" id="bic-slide-8"  
+                            onclick="enlarge('bm-modal', 'assets/consultorio/domain-model.png')">
+                        <img src="assets/consultorio/state-practice-tumb.png" id="bic-slide-9"  
+                            onclick="enlarge('bm-modal', 'assets/consultorio/state-practice.png')">                        
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#bic-slide-1"></a>
+                        <a href="#bic-slide-2"></a>
+                        <a href="#bic-slide-3"></a>
+                        <a href="#bic-slide-4"></a>
+                        <a href="#bic-slide-5"></a>
+                        <a href="#bic-slide-6"></a>
+                        <a href="#bic-slide-7"></a>
+                        <a href="#bic-slide-8"></a>
+                        <a href="#bic-slide-9"></a>
+                    </div>
+                </div>                
+                <br><br>
+                <label id="bic-description" class="company-description"></label>
+                <br />
+                <label id="bic-year" class="label"></label>
+                    <label>2015</label>
+                <br>
+                <label id="bic-architecture" class="label"></label>
+                    <nobr class="tech">Desktop application (Multi-platform)</nobr>,
+                    <nobr class="tech">Layered Design</nobr>,
+                    <nobr class="tech">Object Oriented</nobr>
+                <br>
+                <label id="bic-language" class="label"></label>
+                    <label class="tech">Java</label>
+                <br>
+                <label id="bic-database" class="label"></label>
+                    <nobr class="tech">SQL Server Express</nobr>
+                <br>
+                <label id="bic-IDEs" class="label"></label>
+                    <nobr class="tech">Netbeans</nobr>,
+                    <nobr class="tech">SQL Server Management Studio</nobr>
+                <br>
+                <label id="bic-modeling" class="label"></label>
+                    <nobr class="tech">Sparx Systems Enterprise Architect</nobr>
+                    <nobr class="tech">Adobe Photoshop</nobr>
+                <br>
+                <label id="bic-functionality-label" class="label"></label>
+                <label id="bic-functionality"></label>
+                <br><br><br>
+
                 <h3>Best Movies</h3>
                 <div id="bm-slider-wrapper" class="slider-wrapper">
                     <div class="slider">
@@ -215,13 +357,6 @@
                         <a href="#bm-slide-4"></a>
                     </div>
                 </div>
-                
-                <dialog class="modal-slider" id="bm-modal" modal>
-                    <label id="close-sup" class="hint">Click image to close</label>
-                    <img id="fs-image"  src="" class="full-screen-img" onclick="closeIS('bm-modal')">
-                    <label id="close-inf" class="hint">Click image to close</label>
-                </dialog>
-                
                 <br><br>
                 <label id="best-movies-description" class="company-description"></label>
                 <div class="centered-link"><a target="_blank" href="https://bestmovies.glitch.me">Best Movies</a></div><br />

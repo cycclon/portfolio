@@ -28,8 +28,7 @@
             "graduate_label": "High School Title: ",
             "graduate_text": "Graduate with orientation in English & Computer Science",
             "mba_degree_label": "Master's Degree: ",
-            "mba_degree_text": "Master's in Business Administration (unfinished thesis)"            
-
+            "mba_degree_text": "Master's in Business Administration (unfinished thesis)"
         },
         "knowledge": {
             "knowledge_title": "Knowledge",
@@ -40,13 +39,13 @@
             "OSs_label": "Operating Systems: ",
             "methodologies": {
                 "methodologies_label": "Methodologies: ",
-                "oo": "Object Oriented",
+                "oo": "Object Oriented Programming",
                 "rest": "Representational State Transfer (REST)",
                 "layers": "Layered Design",
                 "mvc": "Model View Controller",
-                "wpf": "Windows Presentation Foundation"
-            }
-            
+                "wpf": "Windows Presentation Foundation",
+                "uml": "Unified Modeling Language"
+            }            
         },
         "experience": {
             "experience_title": "Experience",
@@ -80,12 +79,48 @@
     },
     "projects": {
         "projects_title": "Projects",
-        "best_movies": {
-            "best_movies_description": "Allows you to keep track of Oscars winners and nomenees you have seen. You can also recomend movies to other users."
-        },
         "database": "Database: ",
         "IDEs_tools": "IDEs/Tools used: ",
-        "wc_description": "Classic Wordle game clone with some added features."
+        "modeling_tools": "Modeling/Design Tools: ",
+        "architecture": "Architecture: ",
+        "year": "Year: ",
+        "functionality": "Main functionality: ",
+        "best_movies": {
+            "best_movies_description": "Allows you to keep track of Oscars winners and nomenees you have seen. You can also recomend movies to other users."
+        },        
+        "wordle_game": {
+            "wc_description": "Classic Wordle game clone with some added features."
+        },
+        "vouchers": {
+            "vouchers_title": "Gas Station Vouchers",
+            "vouchers_description": "Custom system build for a gas station to allow them to print prepaid gas vouchers for their big customers (goverment, police, etc). Working up to today in two local gas stations: Refinor and Axion Energy.",
+            "functionality": {
+                "1": "Dashboard showing usage statistics",
+                "2": "Generate vouchers screen allowing the user to distribute money/fuel as desired",
+                "3": "Access card generation for sales users",
+                "4": "Login using the previously generated access card",
+                "5": "Voucher discharge (full or partial). If partial, the remaining balance is left in the voucher for future usage.",
+                "6": "See all vouchers created. Re print and/or extend expiration date.",
+                "7": "Customers / fuel / shifts / users management",
+                "11": "Database backups",
+                "12": "Usage statistics",
+                "13": "Activity log",
+                "14": "Vouchers search function"
+            }
+        },
+        "bic": {
+            "bic_title": "Bio Imaging Clinic",
+            "bic_description": "Custom system developed for a bio imaging clinic (ultrasound, 3D, 4D, X-Rays, etc) that allows them to organize appointments, professionals and keep a clinic history for patients, among other functionalities. Working up to today in clinic: Sosa Magnaro.",
+            "functionality": {
+                "1": "Appointments calendar. Printable appointment sheet to give to the pacient.",
+                "2": "Social Security providers administration",
+                "3": "Cost centers/expenses/balance sheets",
+                "4": "Reports/statistics",
+                "5": "Pacient sheet with clinic history",
+                "6": "Activity Log",
+                "7": "Different access rights for each type of user (receptionist, professional, super user, etc)"                
+            }
+        }
     },
     "contact": {
         "contact_title": "Contact Information",

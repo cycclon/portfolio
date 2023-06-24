@@ -93,6 +93,8 @@ $(document).ready(function(){
     $('#layers').text(language.home.knowledge.methodologies.layers);
     $('#mvc').text(language.home.knowledge.methodologies.mvc);
     $('#wpf').text(language.home.knowledge.methodologies.wpf);
+    $('#uml').text(language.home.knowledge.methodologies.uml);
+    $('#modeling-tools-label').text(language.projects.modeling_tools);
 
     //STUDIES
     $('#studies-title').html(academyIcon + language.home.studies.studies_title);
@@ -120,8 +122,9 @@ $(document).ready(function(){
     for(const prop in language.home.experience.tp_responsabilities){        
         $('#tp-responsabilities').append(`<li>${language.home.experience.tp_responsabilities[prop]}</li>`);
     }
-    $('#grido-description').text(language.home.experience.grido_description);
     $('#tp-responsabilities').append('</ul>');
+
+    $('#grido-description').text(language.home.experience.grido_description);    
     $('#grido-from').text(language.home.experience.from);
     $('#grido-to').text(language.home.experience.to);
     $('#grido-from-date').text(language.home.experience.grido_from_date);
@@ -133,7 +136,7 @@ $(document).ready(function(){
     for(const prop in language.home.experience.grido_responsabilities){
         $('#grido-responsabilities').append(`<li>${language.home.experience.grido_responsabilities[prop]}</li>`);
     }
-
+    $('#grido-responsabilities').append('</ul>');
     //PROJECTS
     $('#projects-title').html(briefCaseIcon + language.projects.projects_title);
     $('#best-movies-description').text(language.projects.best_movies.best_movies_description);
@@ -141,7 +144,36 @@ $(document).ready(function(){
     $('#bm-IDEs').text(language.projects.IDEs_tools);
     $('#wc-database').text(language.projects.database);
     $('#wc-IDEs').text(language.projects.IDEs_tools);
-    $('#wc-description').text(language.projects.wc_description);
+    $('#wc-description').text(language.projects.wordle_game.wc_description);
+    $('#vouchers-title').text(language.projects.vouchers.vouchers_title);
+    $('#siv-language').text(language.home.knowledge.languages_label);
+    $('#siv-database').text(language.home.knowledge.DBs_label);
+    $('#siv-IDEs').text(language.projects.IDEs_tools);
+    $('#siv-modeling').text(language.projects.modeling_tools);
+    $('#siv-description').text(language.projects.vouchers.vouchers_description);
+    $('#siv-architecture').text(language.projects.architecture);
+    $('#siv-year').text(language.projects.year);
+    $('#siv-functionality-label').text(language.projects.functionality);
+    $('#siv-functionality').html('<ul>');
+    for(const prop in language.projects.vouchers.functionality){
+        $('#siv-functionality').append(`<li>${language.projects.vouchers.functionality[prop]}</li>`);
+    }
+    $('#siv-functionality').append('</ul>');
+
+    $('#bic-title').text(language.projects.bic.bic_title);
+    $('#bic-description').text(language.projects.bic.bic_description);
+    $('#bic-language').text(language.home.knowledge.languages_label);
+    $('#bic-database').text(language.home.knowledge.DBs_label);
+    $('#bic-IDEs').text(language.projects.IDEs_tools);
+    $('#bic-modeling').text(language.projects.modeling_tools);
+    $('#bic-architecture').text(language.projects.architecture);
+    $('#bic-year').text(language.projects.year);
+    $('#bic-functionality-label').text(language.projects.functionality);
+    $('#bic-functionality').html('<ul>');
+    for(const prop in language.projects.bic.functionality){
+        $('#bic-functionality').append(`<li>${language.projects.bic.functionality[prop]}</li>`);
+    }
+    $('#bic-functionality').append('</ul>');
 
     //CONTACT
     $('#contact-title').html(envelopeIcon + language.contact.contact_title);

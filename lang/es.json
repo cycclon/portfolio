@@ -43,7 +43,8 @@
                 "rest": "Representational State Transfer (REST)",
                 "layers": "Diseño en Capas",
                 "mvc": "Modelo, Vista, Controlador (MVC)",
-                "wpf": "Windows Presentation Foundation"
+                "wpf": "Windows Presentation Foundation",
+                "uml": "Lenguage Unificado de Modelado"
             }
         },        
         "experience": {
@@ -78,12 +79,48 @@
     },
     "projects": {
         "projects_title": "Proyectos",
+        "database": "Base de datos: ",
+        "IDEs_tools": "IDEs/Herramientas usadas: ",
+        "modeling_tools": "Herramientas de modelado/diseño: ",
+        "architecture": "Arquitectura: ",
+        "year": "Año: ",
+        "functionality": "Principales características: ",
         "best_movies": {
             "best_movies_description": "Permite llevar un registro de películas ganadoas y nominadas al Oscar que viste. Pemite también recomendar películas a otros usuario."
         },
-        "database": "Base de datos: ",
-        "IDEs_tools": "IDEs/Herramientas usadas: ",
-        "wc_description": "Juego Wordle clásico con algunas características agregadas."
+        "wordle_game": {
+            "wc_description": "Juego Wordle clásico con algunas características agregadas."
+        },
+        "vouchers":{
+            "vouchers_title": "Sistema de Individualización de Vales",
+            "vouchers_description": "Sistema a medida para una estación de servicios que permite generar e imprimir vales por combustible para grandes clientes (gobierno, policía, etc). Actualmente funcionando instalado en dos estaciones de servicio locales: Refinor y Axion Energy.",
+            "functionality": {
+                "1": "Dashboard principal que muestra estadísticas de uso.",
+                "2": "Pantalla para generar nueva serie de vales con la posibilidad de distribuir los montos de combustible o dinero como se desee.",
+                "3": "Generación de tarjeta de acceso para operadores de playa.",
+                "4": "Inicio de sesión rápido mediante el uso de la tarjeta de acceso.",
+                "5": "Descarga total o parcial de vales. En caso de ser parcial, el remanente puede ser canjeado en otro momento.",
+                "6": "Ver series emitidas y su estado. Permite reimprimir vales no descargados y/o extender su vencimiento.",                
+                "8": "Gestión de clientes / combustibles / usuarios / turnos",
+                "11": "Baclups de base de datos",
+                "12": "Estadísticas de uso",
+                "13": "Bitácora de actividad",
+                "14": "Búsqueda de vales"
+            }
+        },
+        "bic": {
+            "bic_title": "Consultorio de bio-imagen",
+            "bic_description": "Sistema desarrollado a medida para un consultorio que realiza prácticas de bio imagen. Permite organizar los turnos eficientemente, profesionales, historias clínicas de pacientes, entre otras cosas. Actualmente en funcionamiento en la clínica_ Sosa Magnano.",
+            "functionality": {
+                "1": "Appointments calendar. Printable appointment sheet to give to the pacient.",
+                "2": "Social Security providers administration",
+                "3": "Cost centers/expenses/balance sheets",
+                "4": "Reports/statistics",
+                "5": "Pacient sheet with clinic history",
+                "6": "Activity Log",
+                "7": "Different access rights for each type of user (receptionist, professional, super user, etc)"                
+            }
+        }        
     },
     "contact": {
         "contact_title": "Información de contacto",

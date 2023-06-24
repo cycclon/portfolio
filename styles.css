@@ -15,7 +15,7 @@ body {
     --color-background: black;
     --color-background-dim: rgba(50,50,50, .5);
     --color-background-translucent: rgba(0,0,0, .8);
-    --color-header: darkolivegreen;
+    --color-header: rgb(34, 94, 140);
     --color-tech-background: rgba(50, 50, 150, .8);
     --color-tech-shadow: #333;
     --color-links: rgba(0, 150, 255, 0.7);
@@ -30,7 +30,7 @@ body.light {
     --color-foreground: black;
     --color-foreground-dimm: #444;
     --color-background: #ddd;
-    --color-header: olive;
+    --color-header: rgb(34, 94, 140);
     --color-header-translucent: rgba(94, 94, 22, 0.5);
     --color-tech-shadow: #444;
     --color-background-dim: rgba(30,30,30, .2);
@@ -361,9 +361,10 @@ div.section > h3 {
 }
 
 .slider-nav a {
-    width: 1rem;
-    height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
+    border: 1px solid #555;
     background-color: #fff;
     opacity: .75;
     transition: opacity ease 250ms;
