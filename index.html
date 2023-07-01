@@ -29,14 +29,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                     </svg><span id="home" />
                 </a>        
-            </li>                
-            <!-- <li>
-                <a href="">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                    </svg><span id="about" />
-                </a>
-            </li>                 -->
+            </li>
             <li>
                 <a href="#p-section">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -136,7 +129,7 @@
                         <nobr class="tech">Microsoft Visio</nobr>
                     </label>
             </div>
-            <div id="studies-section" class="section">
+            <div id="studies-section" class="section" style="transition-delay: 1.5s;">
                 <h2 id="studies-title"></h2>
                 <img src="assets/epgm.jpg" class="company-logo" style="width: 150px;" />
                 <div class="centered-link"><a target="_blank" href="https://www.facebook.com/escgabmistral">Gabriela Mistral (FB)</a></div>
@@ -165,7 +158,7 @@
                 <label id="mba-year-label" class="label"></label>
                 <label class="text">2016</label>
             </div>
-            <div id="experience-section" class="section" style="transition-delay: 1.5s;">
+            <div id="experience-section" class="section" style="transition-delay: 2s;">
                 <h2 id="experience"></h2>
                 <img src="assets/tetra-pak-two-liner.png" class="company-logo" style="width: 200px;" />
                 <!-- <h3>Tetra Pak S.R.L.</h3> -->
@@ -202,44 +195,92 @@
             </div>
         </section>
         <section id="p-section" class="home">
-            <div id="projects-section" class="section">
+            <div id="projects-section" class="section" style="transition-delay: 2.5s;">
                 <h2 id="projects-title"></h2>
 
                 <h3 id="vouchers-title"></h3>
-                <div id="siv-slider-wrapper" class="slider-wrapper">
-                    <div class="slider">
-                        <img src="assets/vales/dashboard-tumb.png" id="siv-slide-1" 
-                            onclick="enlarge('bm-modal', 'assets/vales/dashboard.png')">
-                        <img src="assets/vales/generate-vouchers-tumb.png" id="siv-slide-2" 
-                            onclick="enlarge('bm-modal', 'assets/vales/generate-vouchers.png')">
-                        <img src="assets/vales/access-card-tumb.png" id="siv-slide-3" 
-                            onclick="enlarge('bm-modal', 'assets/vales/access-card.png')">
-                        <img src="assets/vales/voucher-scanning-tumb.png" id="siv-slide-4"  
-                            onclick="enlarge('bm-modal', 'assets/vales/voucher-scanning.png')">
-                        <img src="assets/vales/shifts-tumb.png" id="siv-slide-5"  
-                            onclick="enlarge('bm-modal', 'assets/vales/shifts.png')">
-                        <img src="assets/vales/user-details-tumb.png" id="siv-slide-6"  
-                            onclick="enlarge('bm-modal', 'assets/vales/user-details.png')">
-                        <img src="assets/vales/layers-design-tumb.png" id="siv-slide-7"  
-                            onclick="enlarge('bm-modal', 'assets/vales/layers-design.png')">
-                        <img src="assets/vales/classes-vouchers-tumb.png" id="siv-slide-8"  
-                            onclick="enlarge('bm-modal', 'assets/vales/classes-vouchers.png')">
-                        <img src="assets/vales/sequence-login-tumb.png" id="siv-slide-9"  
-                            onclick="enlarge('bm-modal', 'assets/vales/sequence-login.png')">                        
-                    </div>
-                    <div class="slider-nav">
-                        <a href="#siv-slide-1"></a>
-                        <a href="#siv-slide-2"></a>
-                        <a href="#siv-slide-3"></a>
-                        <a href="#siv-slide-4"></a>
-                        <a href="#siv-slide-5"></a>
-                        <a href="#siv-slide-6"></a>
-                        <a href="#siv-slide-7"></a>
-                        <a href="#siv-slide-8"></a>
-                        <a href="#siv-slide-9"></a>
-                    </div>
-                </div>
                 
+                <!--image slider start-->
+                <div class="slider">
+                    <div class="slides">
+                    <!--radio buttons start-->
+                    <input type="radio" name="radio-btn" id="siv-radio1" class="radio1">
+                    <input type="radio" name="radio-btn" id="siv-radio2" class="radio2">
+                    <input type="radio" name="radio-btn" id="siv-radio3" class="radio3">
+                    <input type="radio" name="radio-btn" id="siv-radio4"class="radio4">
+                    <input type="radio" name="radio-btn" id="siv-radio5"class="radio5">
+                    <input type="radio" name="radio-btn" id="siv-radio6"class="radio6">
+                    <input type="radio" name="radio-btn" id="siv-radio7"class="radio7">
+                    <input type="radio" name="radio-btn" id="siv-radio8"class="radio8">
+                    <input type="radio" name="radio-btn" id="siv-radio9"class="radio9">
+                    <!--radio buttons end-->
+                    <!--slide images start-->
+                    <div class="slide first">
+                        <img src="assets/vales/dashboard-tumb.png" id="siv-slide-1" 
+                            onclick="enlarge('bm-modal', 'assets/vales/dashboard.png')" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/vales/generate-vouchers-tumb.png" id="siv-slide-2" 
+                            onclick="enlarge('bm-modal', 'assets/vales/generate-vouchers.png')" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/vales/access-card-tumb.png" id="siv-slide-3" 
+                            onclick="enlarge('bm-modal', 'assets/vales/access-card.png')" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/vales/voucher-scanning-tumb.png" id="siv-slide-4"  
+                            onclick="enlarge('bm-modal', 'assets/vales/voucher-scanning.png')" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/vales/shifts-tumb.png" id="siv-slide-5"  
+                            onclick="enlarge('bm-modal', 'assets/vales/shifts.png')" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/vales/user-details-tumb.png" id="siv-slide-6"  
+                            onclick="enlarge('bm-modal', 'assets/vales/user-details.png')" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/vales/layers-design-tumb.png" id="siv-slide-7"  
+                            onclick="enlarge('bm-modal', 'assets/vales/layers-design.png')" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/vales/classes-vouchers-tumb.png" id="siv-slide-8"  
+                            onclick="enlarge('bm-modal', 'assets/vales/classes-vouchers.png')" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/vales/sequence-login-tumb.png" id="siv-slide-9"  
+                            onclick="enlarge('bm-modal', 'assets/vales/sequence-login.png')" />
+                    </div>
+                    <!--slide images end-->
+                    <!--automatic navigation start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                        <div class="auto-btn6"></div>
+                        <div class="auto-btn7"></div>
+                        <div class="auto-btn8"></div>
+                        <div class="auto-btn9"></div>
+                    </div>
+                    <!--automatic navigation end-->
+                    </div>
+                    <!--manual navigation start-->
+                    <div class="navigation-manual">
+                        <label for="siv-radio1" class="manual-btn"></label>
+                        <label for="siv-radio2" class="manual-btn"></label>
+                        <label for="siv-radio3" class="manual-btn"></label>
+                        <label for="siv-radio4" class="manual-btn"></label>
+                        <label for="siv-radio5" class="manual-btn"></label>
+                        <label for="siv-radio6" class="manual-btn"></label>
+                        <label for="siv-radio7" class="manual-btn"></label>
+                        <label for="siv-radio8" class="manual-btn"></label>
+                        <label for="siv-radio9" class="manual-btn"></label>
+                    </div>
+                    <!--manual navigation end-->
+                </div>
+                <!--image slider end-->
                 <dialog class="modal-slider" id="bm-modal" modal>
                     <label id="close-sup" class="hint">Click image to close</label>
                     <img id="fs-image"  src="" class="full-screen-img" onclick="closeIS('bm-modal')">
@@ -249,6 +290,11 @@
                 <br><br>
                 <label id="siv-description" class="company-description"></label>
                 <br />
+                <div class="centered-link">
+                    <a class="social-media" href="https://github.com/cycclon/vales" target="_blank">
+                        <img src="assets/gh-icon.png">
+                    </a>
+                </div><br />
                 <label id="siv-year" class="label"></label>
                     <label>2009</label>
                 <br>
@@ -275,43 +321,96 @@
                 <label id="siv-functionality"></label>
                 <br><br><br>
 
-                <h3 id="bic-title"></h3>
-                <div id="bic-slider-wrapper" class="slider-wrapper">
-                    <div class="slider">
+                <h3 id="bic-title"></h3>                
+                <!--image slider start-->
+                <div class="slider">
+                    <div class="slides">
+                    <!--radio buttons start-->
+                    <input type="radio" name="radio-btn" id="bic-radio1" class="radio1">
+                    <input type="radio" name="radio-btn" id="bic-radio2" class="radio2">
+                    <input type="radio" name="radio-btn" id="bic-radio3" class="radio3">
+                    <input type="radio" name="radio-btn" id="bic-radio4"class="radio4">
+                    <input type="radio" name="radio-btn" id="bic-radio5"class="radio5">
+                    <input type="radio" name="radio-btn" id="bic-radio6"class="radio6">
+                    <input type="radio" name="radio-btn" id="bic-radio7"class="radio7">
+                    <input type="radio" name="radio-btn" id="bic-radio8"class="radio8">
+                    <input type="radio" name="radio-btn" id="bic-radio9"class="radio9">
+                    <!--radio buttons end-->
+                    <!--slide images start-->
+                    <div class="slide first">
                         <img src="assets/consultorio/login-tumb.png" id="bic-slide-1" 
                             onclick="enlarge('bm-modal', 'assets/consultorio/login.png')">
+                    </div>
+                    <div class="slide">
                         <img src="assets/consultorio/appointments-tumb.png" id="bic-slide-2" 
                             onclick="enlarge('bm-modal', 'assets/consultorio/appointments.png')">
+                    </div>
+                    <div class="slide">
                         <img src="assets/consultorio/main-menu-tumb.png" id="bic-slide-3" 
                             onclick="enlarge('bm-modal', 'assets/consultorio/main-menu.png')">
+                    </div>
+                    <div class="slide">
                         <img src="assets/consultorio/pacient-details-tumb.png" id="bic-slide-4"  
                             onclick="enlarge('bm-modal', 'assets/consultorio/pacient-details.png')">
+                    </div>
+                    <div class="slide">
                         <img src="assets/consultorio/user-menu-tumb.png" id="bic-slide-5"  
                             onclick="enlarge('bm-modal', 'assets/consultorio/user-menu.png')">
+                    </div>
+                    <div class="slide">
                         <img src="assets/consultorio/class-acounts-tumb.png" id="bic-slide-6"  
                             onclick="enlarge('bm-modal', 'assets/consultorio/class-acounts.png')">
+                    </div>
+                    <div class="slide">
                         <img src="assets/consultorio/class-practices-tumb.png" id="bic-slide-7"  
                             onclick="enlarge('bm-modal', 'assets/consultorio/class-practices.png')">
+                    </div>
+                    <div class="slide">
                         <img src="assets/consultorio/domain-model-tumb.png" id="bic-slide-8"  
                             onclick="enlarge('bm-modal', 'assets/consultorio/domain-model.png')">
+                    </div>
+                    <div class="slide">
                         <img src="assets/consultorio/state-practice-tumb.png" id="bic-slide-9"  
-                            onclick="enlarge('bm-modal', 'assets/consultorio/state-practice.png')">                        
+                            onclick="enlarge('bm-modal', 'assets/consultorio/state-practice.png')">
                     </div>
-                    <div class="slider-nav">
-                        <a href="#bic-slide-1"></a>
-                        <a href="#bic-slide-2"></a>
-                        <a href="#bic-slide-3"></a>
-                        <a href="#bic-slide-4"></a>
-                        <a href="#bic-slide-5"></a>
-                        <a href="#bic-slide-6"></a>
-                        <a href="#bic-slide-7"></a>
-                        <a href="#bic-slide-8"></a>
-                        <a href="#bic-slide-9"></a>
+                    <!--slide images end-->
+                    <!--automatic navigation start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                        <div class="auto-btn6"></div>
+                        <div class="auto-btn7"></div>
+                        <div class="auto-btn8"></div>
+                        <div class="auto-btn9"></div>
                     </div>
-                </div>                
+                    <!--automatic navigation end-->
+                    </div>
+                    <!--manual navigation start-->
+                    <div class="navigation-manual">
+                        <label for="bic-radio1" class="manual-btn"></label>
+                        <label for="bic-radio2" class="manual-btn"></label>
+                        <label for="bic-radio3" class="manual-btn"></label>
+                        <label for="bic-radio4" class="manual-btn"></label>
+                        <label for="bic-radio5" class="manual-btn"></label>
+                        <label for="bic-radio6" class="manual-btn"></label>
+                        <label for="bic-radio7" class="manual-btn"></label>
+                        <label for="bic-radio8" class="manual-btn"></label>
+                        <label for="bic-radio9" class="manual-btn"></label>
+                    </div>
+                    <!--manual navigation end-->
+                </div>
+                <!--image slider end-->
                 <br><br>
                 <label id="bic-description" class="company-description"></label>
                 <br />
+                <div class="centered-link">
+                    <a class="social-media" href="https://github.com/cycclon/consultorio" target="_blank">
+                        <img src="assets/gh-icon.png">
+                    </a>
+                </div><br />
                 <label id="bic-year" class="label"></label>
                     <label>2015</label>
                 <br>
@@ -338,28 +437,61 @@
                 <label id="bic-functionality"></label>
                 <br><br><br>
 
-                <h3>Best Movies</h3>
-                <div id="bm-slider-wrapper" class="slider-wrapper">
-                    <div class="slider">
-                        <img src="assets/best_movies/bm-home-tumb.png" id="bm-slide-1" 
+                <h3>Best Movies</h3>                
+                <!--image slider start-->
+                <div class="slider">
+                    <div class="slides">
+                    <!--radio buttons start-->
+                    <input type="radio" name="radio-btn" id="bm-radio1" class="radio1">
+                    <input type="radio" name="radio-btn" id="bm-radio2" class="radio2">
+                    <input type="radio" name="radio-btn" id="bm-radio3" class="radio3">
+                    <input type="radio" name="radio-btn" id="bm-radio4"class="radio4">
+                    <!--radio buttons end-->
+                    <!--slide images start-->
+                    <div class="slide first">
+                        <img src="assets/best_movies/bm-home-tumb.png"  
                             onclick="enlarge('bm-modal', 'assets/best_movies/bm-home.png')">
-                        <img src="assets/best_movies/bm-login-tumb.png" id="bm-slide-2" 
+                    </div>
+                    <div class="slide">
+                        <img src="assets/best_movies/bm-login-tumb.png" 
                             onclick="enlarge('bm-modal', 'assets/best_movies/bm-login.png')">
-                        <img src="assets/best_movies/bm-movie-details-tumb.png" id="bm-slide-3" 
+                    </div>
+                    <div class="slide">
+                        <img src="assets/best_movies/bm-movie-details-tumb.png" 
                             onclick="enlarge('bm-modal', 'assets/best_movies/bm-movie-details.png')">
-                        <img src="assets/best_movies/bm-recomendation-tumb.png" id="bm-slide-4"  
+                    </div>
+                    <div class="slide">
+                        <img src="assets/best_movies/bm-recomendation-tumb.png" 
                             onclick="enlarge('bm-modal', 'assets/best_movies/bm-recomendation.png')">
                     </div>
-                    <div class="slider-nav">
-                        <a href="#bm-slide-1"></a>
-                        <a href="#bm-slide-2"></a>
-                        <a href="#bm-slide-3"></a>
-                        <a href="#bm-slide-4"></a>
+                    <!--slide images end-->
+                    <!--automatic navigation start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
                     </div>
+                    <!--automatic navigation end-->
+                    </div>
+                    <!--manual navigation start-->
+                    <div class="navigation-manual">
+                        <label for="bm-radio1" class="manual-btn"></label>
+                        <label for="bm-radio2" class="manual-btn"></label>
+                        <label for="bm-radio3" class="manual-btn"></label>
+                        <label for="bm-radio4" class="manual-btn"></label>
+                    </div>
+                    <!--manual navigation end-->
                 </div>
+                <!--image slider end-->
                 <br><br>
                 <label id="best-movies-description" class="company-description"></label>
-                <div class="centered-link"><a target="_blank" href="https://bestmovies.glitch.me">Best Movies</a></div><br />
+                <div class="centered-link">
+                    <a target="_blank" href="https://bestmovies.glitch.me">Best Movies</a><br>
+                    <a class="social-media" href="https://github.com/cycclon/best-movies" target="_blank">
+                        <img src="assets/gh-icon.png">
+                    </a>
+                </div><br />
                 <label class="label">Front end: </label>
                     <label class="tech">HTML</label>,
                     <label class="tech">CSS</label>,
@@ -379,27 +511,60 @@
                     <nobr class="tech">Mongo DB Compass</nobr>
                 <br><br><br>
                 <h3>Wordle Clone</h3>
-                <div id="wg-slider-wrapper" class="slider-wrapper">
-                    <div class="slider">
-                        <img src="assets/wordle/w-round1-tumb.png" id="wg-slide-1" 
+                <!--image slider start-->
+                <div class="slider">
+                    <div class="slides">
+                    <!--radio buttons start-->
+                    <input type="radio" name="radio-btn" id="wc-radio1" class="radio1">
+                    <input type="radio" name="radio-btn" id="wc-radio2" class="radio2">
+                    <input type="radio" name="radio-btn" id="wc-radio3" class="radio3">
+                    <input type="radio" name="radio-btn" id="wc-radio4"class="radio4">
+                    <!--radio buttons end-->
+                    <!--slide images start-->
+                    <div class="slide first">
+                        <img src="assets/wordle/w-round1-tumb.png" 
                             onclick="enlarge('bm-modal', 'assets/wordle/w-round1.png')">
-                        <img src="assets/wordle/w-rules-tumb.png" id="wg-slide-2" 
+                    </div>
+                    <div class="slide">
+                        <img src="assets/wordle/w-rules-tumb.png"  
                             onclick="enlarge('bm-modal', 'assets/wordle/w-rules.png')">
-                        <img src="assets/wordle/w-win-tumb.png" id="wg-slide-3" 
+                    </div>
+                    <div class="slide">
+                        <img src="assets/wordle/w-win-tumb.png"  
                             onclick="enlarge('bm-modal', 'assets/wordle/w-win.png')">
-                        <img src="assets/wordle/w-win-rate-tumb.png" id="wg-slide-4"  
+                    </div>
+                    <div class="slide">
+                        <img src="assets/wordle/w-win-rate-tumb.png"  
                             onclick="enlarge('bm-modal', 'assets/wordle/w-win-rate.png')">
                     </div>
-                    <div class="slider-nav">
-                        <a href="#wg-slide-1"></a>
-                        <a href="#wg-slide-2"></a>
-                        <a href="#wg-slide-3"></a>
-                        <a href="#wg-slide-4"></a>
+                    <!--slide images end-->
+                    <!--automatic navigation start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
                     </div>
+                    <!--automatic navigation end-->
+                    </div>
+                    <!--manual navigation start-->
+                    <div class="navigation-manual">
+                        <label for="wc-radio1" class="manual-btn"></label>
+                        <label for="wc-radio2" class="manual-btn"></label>
+                        <label for="wc-radio3" class="manual-btn"></label>
+                        <label for="wc-radio4" class="manual-btn"></label>
+                    </div>
+                    <!--manual navigation end-->
                 </div>
+                <!--image slider end-->
                 <br><br>
                 <label id="wc-description" class="company-description"></label>
-                <div class="centered-link"><a target="_blank" href="https://mywordle.glitch.me">Wordle Game</a></div><br />
+                <div class="centered-link">
+                    <a target="_blank" href="https://mywordle.glitch.me">Wordle Game</a><br>
+                    <a class="social-media" href="https://github.com/cycclon/wordle-game" target="_blank">
+                        <img src="assets/gh-icon.png">
+                    </a>
+                </div><br />
                 <label class="label">Front end: </label>
                     <label class="tech">HTML</label>,
                     <label class="tech">CSS</label>,
@@ -419,14 +584,15 @@
                     <nobr class="tech">Mongo DB Compass</nobr>
             </div>
         </section>
-        <section id="c-section" class="home">
-            <div id="contact-section" class="section">
+        <section id="c-section" class="home" >
+            <div id="contact-section" class="section" style="transition-delay: 3s;">
                 <h2 id="contact-title"></h2>
                 <label id="email" class="label"></label>
                 <label class="text">pedro.spidalieri@gmail.com</label>
                 <br>
                 <label id="phone" class="label"></label>
                 <label class="text">+54</label> <label class="text">380-4280591</label>
+                <a class="social-media" href="https://wa.me/5493804280591"><img src="assets/wa-icon.png" style="width: 18px; height: 18px;"></a>
                 <br>
                 <label id="social-media" class="label social-media"></label>
                 <a class="social-media" href="https://www.linkedin.com/in/pedro-spidalieri-39a362114"><img src="assets/in-icon.png"></a>
