@@ -32,7 +32,7 @@
         },
         "knowledge": {
             "knowledge_title": "Knowledge",
-            "languages_label": "Programming Languages: ",
+            "languages_label": "Programming/Markup Languages: ",
             "libraries_label": "Libraries/Frameworks: ",
             "IDEs_label": "Development Enviroments: ",
             "DBs_label": "Database Engines: ",
@@ -81,7 +81,7 @@
         "projects_title": "Projects",
         "database": "Database: ",
         "IDEs_tools": "IDEs/Tools used: ",
-        "modeling_tools": "Modeling/Design Tools: ",
+        "modeling_tools": "Tools: ",
         "architecture": "Architecture: ",
         "year": "Year: ",
         "functionality": "Main functionality: ",
