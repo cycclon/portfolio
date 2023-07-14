@@ -224,53 +224,64 @@ section.home {
     font-size: 14px;
 }
 
+.introduction {
+  font-style: italic;
+  color: var(--color-foreground-dimm);
+}
+
 .company-description {
-    display: block;
-    font-weight: lighter;
-    font-style: italic;
-    color: var(--color-foreground-dimm);
-    padding: 5px;
-    background-color: var(--color-background-dim);
-    border-radius: 4px;
-    font-size: 14px;
-    text-align: center;
+  display: block;
+  font-weight: lighter;
+  font-style: italic;
+  color: var(--color-foreground-dimm);
+  padding: 5px;
+  background-color: var(--color-background-dim);
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .company-logo {
-    display: block;
-    width: 120px;    
-    margin: 0 auto;
+  display: block;
+  width: 120px;    
+  margin: 0 auto;
 }
 
 .profile-picture {
-    position: absolute;
-    top: 130px;
-    border-radius: 50px;
-    width: 130px;
-    z-index: 999;
+  position: relative;
+  top: 10px;
+  border-radius: 50px;
+  width: 130px;
+  z-index: 999;
 }
 
 span.hidden {
-    position: relative;    
-    left: -400px;
-    opacity: 0;
-    transition: all .8s ease-in;    
+  position: relative;
+  top: -145px;  
+  left: -400px;
+  opacity: 0;
+  transition: all .8s ease-in;    
+}
+
+hr.separator {
+  top: -145px;
+  width: 95%;
 }
 
 span.visible {
-    opacity: 1;
-    left: 140px;
-    transition: all .8s ease-out;
+  opacity: 1;
+  left: 140px;
+  transition: all .8s ease-out;
 }
 
 section > hr {
-    margin-left: 15px;
-    position: relative;
-    border: none;
-    height: 1px;
-    opacity: 0;
-    color: var(--color-foreground-dimm);
-    background-color: var(--color-foreground-dimm);
+  margin-left: 15px;
+  position: relative;
+  border: none;
+  height: 1px;
+  opacity: 0;
+  color: var(--color-foreground-dimm);
+  background-color: var(--color-foreground-dimm);
 }
 
 section >hr.visible {
@@ -287,7 +298,7 @@ section .label {
 
 div.section {
     position: relative;
-    top: 110px; 
+    top: -110px; 
     width: 98%;
     border: 1px solid var(--color-header-translucent);
     padding: 10px 5px;
