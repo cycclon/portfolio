@@ -12,6 +12,8 @@
         "spanish": "Spanish"
     },
     "home": {
+        "introduction": "Ingeniero de sistemas proactivo y experimentado con una fuerte pasión por la programación, buscando nuevos desafíos en un entorno remoto.",
+        "introduction_long": "Deseoso de aprender y mantenerme a la vanguardia de las tecnologías emergentes. A través de mi trabajo en una fábrica de manufactura de envases y la gestión de mi negocio, he desarrollado mis habilidades para resolver problemas y un buen ojo para los detalles. Ahora, estoy emocionado de hacer la transición al mundo de la programación remota, aprovechando mi experiencia para contribuir a proyectos innovadores. Con una mentalidad de crecimiento y un impulso por la excelencia, me dedico a brindar soluciones de alta calidad y expandir continuamente mi conocimiento en el campo en constante evolución del desarrollo de software.",
         "full_title_label": "Título: ",
         "full_title": "Ingeniero en Sistemas",
         "country_label": "País: ",

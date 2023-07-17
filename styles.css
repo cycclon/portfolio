@@ -223,6 +223,11 @@ section.home {
 }
 
 .introduction {
+  font-size: 16px;
+  color: var(--color-foreground-dimm);
+}
+
+.introduction-long {
   font-style: italic;
   color: var(--color-foreground-dimm);
 }
