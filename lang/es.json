@@ -45,7 +45,6 @@
                 "rest": "Representational State Transfer (REST)",
                 "layers": "Diseño en Capas",
                 "mvc": "Modelo, Vista, Controlador (MVC)",
-                "wpf": "Windows Presentation Foundation",
                 "uml": "Lenguage Unificado de Modelado"
             }
         },        

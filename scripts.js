@@ -93,8 +93,7 @@ $(document).ready(function(){
     $('#oo').text(language.home.knowledge.methodologies.oo);
     $('#rest').text(language.home.knowledge.methodologies.rest);
     $('#layers').text(language.home.knowledge.methodologies.layers);
-    $('#mvc').text(language.home.knowledge.methodologies.mvc);
-    $('#wpf').text(language.home.knowledge.methodologies.wpf);
+    $('#mvc').text(language.home.knowledge.methodologies.mvc);    
     $('#uml').text(language.home.knowledge.methodologies.uml);
     $('#modeling-tools-label').text(language.projects.modeling_tools);
 

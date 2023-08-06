@@ -45,7 +45,6 @@
                 "rest": "Representational State Transfer (REST)",
                 "layers": "Layered Design",
                 "mvc": "Model View Controller",
-                "wpf": "Windows Presentation Foundation",
                 "uml": "Unified Modeling Language"
             }            
         },
